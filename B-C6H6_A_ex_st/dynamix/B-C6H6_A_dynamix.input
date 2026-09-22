@@ -60,7 +60,7 @@
  DT= 10.0
  VELO= 3
  THER= 2
- TEMP=300
+ TEMP=8
  HOP= 1
 
 >> END DO

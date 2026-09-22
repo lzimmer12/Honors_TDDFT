@@ -1,0 +1,13 @@
+&GATEWAY
+	Coord = Benzene.xyz
+	Basis = ANO-R1
+	Group = NoSym
+	RICD
+
+&SEWARD
+
+&RASSCF
+  Charge = 0
+  Spin = 1
+  NActEl = 6
+  RAS2 = 6

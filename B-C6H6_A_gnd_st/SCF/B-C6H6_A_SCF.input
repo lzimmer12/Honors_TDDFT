@@ -1,0 +1,10 @@
+&GATEWAY
+	Coord = B-C6H6_A.xyz
+	Basis = ANO-R1
+	Group = NoSym
+	RICD
+
+&SEWARD
+&SCF
+&GRID_IT
+

@@ -1,0 +1,15 @@
+&GATEWAY
+	Coord = B-C6H6_A.xyz
+	Basis = ANO-R1
+	Group = NoSym
+	RICD
+
+&SEWARD
+
+&RASSCF
+  Charge = 0
+  Spin = 2
+  NActEl = 0
+  RAS2 = 6
+&GRID_IT
+  ALL

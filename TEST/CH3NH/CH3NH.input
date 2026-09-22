@@ -1,0 +1,57 @@
+&GATEWAY
+ COORD
+ 6
+ angstrom
+ C  0.00031448  0.00000000  0.04334060
+ N  0.00062994  0.00000000  1.32317716
+ H  0.92882820  0.00000000 -0.49115611
+ H -0.92846597  0.00000000 -0.49069213
+ H -0.85725321  0.00000000  1.86103989
+ H  0.85877656  0.00000000  1.86062860
+ BASIS= 3-21G
+ GROUP= nosym
+
+>> EXPORT MOLCAS_MAXITER=1000
+>> DOWHILE
+
+&SEWARD
+
+>> IF ( ITER = 1 )
+
+&RASSCF
+ LUMORB
+ FileOrb= $Project.GssOrb
+ Symmetry= 1
+ Spin= 1
+ nActEl= 2 0 0
+ Inactive= 7
+ RAS2= 2
+ CIroot= 3 3 1
+
+>> COPY $Project.JobIph $Project.JobOld
+
+>> ENDIF
+
+&RASSCF
+ JOBIPH; CIRESTART
+ Symmetry= 1
+ Spin= 1
+ nActEl= 2 0 0
+ Inactive= 7
+ RAS2= 2
+ CIroot= 3 3 1
+ MDRLXR= 2
+
+>> COPY $Project.JobIph $Project.JobOld
+
+&ALASKA
+
+&DYNAMIX
+ VELVer
+ DT= 10.0
+ VELO= 3
+ THER= 2
+ TEMP=300
+ HOP= 1
+
+>> END DO

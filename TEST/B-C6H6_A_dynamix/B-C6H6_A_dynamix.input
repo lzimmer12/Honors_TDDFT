@@ -1,0 +1,64 @@
+&GATEWAY
+ COORD
+ 13
+	gV B-C6H6_A
+ C                 -0.04355100    1.21071200    0.29745900
+ C                 -1.34546800    0.66464800   -0.19016700
+ C                 -1.34548600   -0.66462400   -0.19013200
+ C                 -0.04355800   -1.21072300    0.29743200
+ C                  1.13285100   -0.68662000   -0.45520000
+ C                  1.13289000    0.68659700   -0.45518600
+ H                  0.02132100    2.25364300    0.57781400
+ H                 -2.13715100    1.29796200   -0.56701000
+ H                 -2.13718000   -1.29793700   -0.56695400
+ H                  0.02127400   -2.25364700    0.57781900
+ H                  1.98822400   -1.28643500   -0.73345100
+ H                  1.98822600    1.28639600   -0.73355900
+ B                  0.66584400    0.00001500    1.12402200
+ BASIS= 3-21G
+ GROUP= nosym
+
+>> EXPORT MOLCAS_MAXITER=1000
+>> DOWHILE
+
+&SEWARD
+
+>> IF ( ITER = 1 )
+
+&RASSCF
+ LUMORB
+ FileOrb= $Project.GssOrb
+ Symmetry= 1
+ Spin= 1
+ nActEl= 4 0 0
+ Inactive= 26
+ RAS2= 3
+ CIroot= 3 3 1
+
+>> COPY $Project.JobIph $Project.JobOld
+
+>> ENDIF
+
+&RASSCF
+ JOBIPH; CIRESTART
+ Symmetry= 1
+ Spin= 1
+ nActEl= 4 0 0
+ Inactive= 26
+ RAS2= 3
+ CIroot= 3 3 1
+ MDRLXR= 2
+
+>> COPY $Project.JobIph $Project.JobOld
+
+&ALASKA
+
+&DYNAMIX
+ VELVer
+ DT= 10.0
+ VELO= 3
+ THER= 2
+ TEMP=300
+ HOP= 1
+
+>> END DO

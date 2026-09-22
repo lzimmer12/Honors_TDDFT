@@ -1,0 +1,1302 @@
+   This run of MOLCAS is using the pymolcas driver
+
+                             OPE
+                             OPE          NMOL  CASOP  ENMOLC A   SO
+                 OPE        NMOLC        AS  OP EN  MO LC     AS  OP
+                OPENM       OL CA        SO  PE NM  OL CA     SOP EN
+                OP EN      MO   LC       AS  OP ENMOL  CASO   PENMOL
+                OP  EN     MO   LC       AS  OP EN     MO     LC ASO
+               OP   E  NMOL  C  AS       OP  EN MO     LC     AS  OP
+               OP  E   NMO   LC AS        OPEN  MO     LCASOP EN   M
+               O  PEN   MO  LCA  SO
+            OPE   NMO   L   CAS    OP
+        OPENMOL  CASOP     ENMOL   CASOPE
+     OPENMOLCA   SOPENMOLCASOPEN   MOLCASOPE
+    OPENMOLCAS   OP           EN   MOL    CAS
+    OPENMOLCAS       OP  ENM        O     LCA
+    OPENMOLCAS    OPEN  MOLCASO     P  E  NMO
+    OPENMOLCAS     OP               E  N  MOL
+    OPENMOLCA   SO           PENM   O  L  CAS    OPEN    MO    LCAS
+    OPENMOLCA   SOP           ENM   O  L  CAS   OP  EN  MOLC  AS   O
+    OPENMOLCA   SOPE           NM      O  LCA   S      OP  EN MO
+    OPENMOLC                AS         O  PEN   M      OL  CA  SOPE
+    OPENMO        LCASOPE  NMOL        C  ASO   P      ENMOLC     AS
+    OPE     NMO      LCA  SO     P     E   NM   OL  CA SO  PE N   MO
+          OPENMOLCA            SOPE   NMO        LCAS  O    P  ENMO
+     OPENMOLCASOPENMOLCASOPENMOLCASOPENMOLCA
+        OPENMOLCASOPENMOLCASOPENMOLCASOPE
+            OPENMOLCASOPENMOLCASOPENM
+               OPENMOLCASOPENMOLCA        version: 26.06
+                   OPENMOLCASO
+                       OPE                tag: 1255-g02e1240ae
+
+ OpenMolcas is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License version 2.1.
+ OpenMolcas is distributed in the hope that it will be useful, but it
+ is provided "as is" and without any express or implied warranties.
+ For more details see the full text of the license in the file
+ LICENSE or in <http://www.gnu.org/licenses/>.
+
+                 Copyright (C) The OpenMolcas Authors
+           For the author list and the recommended citation,
+                   consult the file CONTRIBUTORS.md
+
+           *************************************************
+           * pymolcas version py2.32                       *
+           *   build 5fe1e42a8a423461f97be6f8128d9c45      *
+           *   (after the EMIL interpreter by V. Veryazov) *
+           *************************************************
+
+configuration info
+------------------
+Host name: MacBook-Air-11.local (macOS)
+C Compiler ID: AppleClang
+C flags: -std=gnu99
+Fortran Compiler ID: GNU
+Fortran flags: -cpp -fdefault-integer-8 -fmax-stack-var-size=1048576
+Definitions: _MOLCAS_;_I8_;_LINUX_;_DARWIN_;_DARWIN_C_SOURCE
+Parallel: OFF (GA=OFF)
+
+
+   --------------------------------------------------------------------------------------------------------------------
+  |
+  |              Project: B-C6H6_A
+  |       Submitted from: /Users/lucas/Development/Honors/OpenMolcas/build/CALCULATIONS/B-C6H6_A_gnd_st
+  |         Scratch area: /var/folders/rj/9xhw_kt55gn7mmtx7w55qws80000gn/T/B-C6H6_A
+  |      Save outputs to: /Users/lucas/Development/Honors/OpenMolcas/build/CALCULATIONS/B-C6H6_A_gnd_st/$CurrDir/output
+  |               Molcas: /Users/lucas/Development/Honors/OpenMolcas/build
+  |
+  | Scratch area is empty
+  |
+  |       MOLCAS_DRIVER = /Users/lucas/Development/Honors/OpenMolcas/build/pymolcas
+  | MOLCAS_NEW_DEFAULTS = YES
+  |       MOLCAS_NPROCS = 1
+  |       MOLCAS_SOURCE = /Users/lucas/Development/Honors/OpenMolcas/OpenMolcas
+  |    MOLCAS_STRUCTURE = 0
+  |         MOLCAS_TRAP = YES
+  |
+   --------------------------------------------------------------------------------------------------------------------
+
+++ ---------   Input file   ---------
+
+&GATEWAY
+        Coord = B-C6H6_A.xyz
+        Basis = 6-31G*
+        Group = NoSym
+        RICD
+
+&SEWARD
+
+&RASSCF
+  Charge = 0
+  Spin = 2
+  NActEl = 0
+  RAS2 = 13
+
+-- ----------------------------------
+
+--- Start Module: gateway at Thu Sep 17 18:07:20 2026 ---
+
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &GATEWAY
+
+                                   only a single process is used
+                       available to each process: 5.0 GB of memory, 1 thread?
+                                             pid: 52261
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+
+++    Symmetry information:
+      ---------------------
+
+                    Character Table for C1 
+
+                             E  
+                    a        1  x, y, xy, Rz, z, xz, Ry, yz, Rx, I
+--
+
+
+++    Basis set information:
+      ----------------------
+
+
+      Basis set label: C.6-31G**....
+
+      Electronic valence basis set:
+      ------------------
+      Associated Effective Charge   6.000000 au
+      Associated Actual Charge      6.000000 au
+      Nuclear Model: Point charge
+
+      Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+         s      10       3        X                  
+         p       4       2        X                  
+         d       1       1        X                  
+
+
+      Basis set label: H.6-31G....
+
+      Electronic valence basis set:
+      ------------------
+      Associated Effective Charge   1.000000 au
+      Associated Actual Charge      1.000000 au
+      Nuclear Model: Point charge
+
+      Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+         s       4       2        X                  
+
+
+      Basis set label: B.6-31G**....
+
+      Electronic valence basis set:
+      ------------------
+      Associated Effective Charge   5.000000 au
+      Associated Actual Charge      5.000000 au
+      Nuclear Model: Point charge
+
+      Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+         s      10       3        X                  
+         p       4       2        X                  
+         d       1       1        X                  
+--
+
+
+++    Molecular structure info:
+      -------------------------
+
+                    ************************************************ 
+                    **** Cartesian Coordinates / bohr, angstrom **** 
+                    ************************************************ 
+
+     Center  Label                x              y              z                     x              y              z
+        1      C1              -0.082299       2.287914       0.562116             -0.043551       1.210712       0.297459
+        2      C2              -2.542566       1.256003      -0.359364             -1.345468       0.664648      -0.190167
+        3      C3              -2.542600      -1.255957      -0.359297             -1.345486      -0.664624      -0.190132
+        4      C4              -0.082313      -2.287935       0.562065             -0.043558      -1.210723       0.297432
+        5      C5               2.140778      -1.297524      -0.860203              1.132851      -0.686620      -0.455200
+        6      C6               2.140852       1.297480      -0.860177              1.132890       0.686597      -0.455186
+        7      H7               0.040291       4.258768       1.091910              0.021321       2.253643       0.577814
+        8      H8              -4.038630       2.452793      -1.071494             -2.137151       1.297962      -0.567010
+        9      H9              -4.038685      -2.452745      -1.071388             -2.137180      -1.297937      -0.566954
+       10      H10              0.040202      -4.258776       1.091920              0.021274      -2.253647       0.577819
+       11      H11              3.757199      -2.431010      -1.386022              1.988224      -1.286435      -0.733451
+       12      H12              3.757203       2.430936      -1.386226              1.988226       1.286396      -0.733559
+       13      B13              1.258263       0.000028       2.124094              0.665844       0.000015       1.124022
+
+                    *************************************** 
+                    *    InterNuclear Distances / bohr    * 
+                    *************************************** 
+
+               1 C1            2 C2            3 C3            4 C4            5 C5            6 C6    
+    1 C1       0.000000
+    2 C2       2.822566        0.000000
+    3 C3       4.411474        2.511960        0.000000
+    4 C4       4.575849        4.411504        2.822570        0.000000
+    5 C5       4.452014        5.357709        4.710272        2.818846        0.000000
+    6 C6       2.818914        4.710301        5.357765        4.452015        2.595004        0.000000
+    7 H7       2.044499        4.218287        6.260154        6.569253        6.252613        4.122163
+    8 H8       4.283505        2.043928        4.062038        6.387132        7.231501        6.290103
+    9 H9       6.387110        4.062039        2.043929        4.283481        6.290064        7.231561
+   10 H10      6.569235        6.260167        4.218272        2.044497        4.122162        6.252631
+   11 H11      6.387897        7.371236        6.490175        4.307825        2.043059        4.097649
+   12 H12      4.307931        6.490146        7.371247        6.387915        4.097675        2.043047
+   13 B13      3.077548        4.710768        4.710763        3.077637        3.371721        3.371679
+
+               7 H7            8 H8            9 H9           10 H10          11 H11          12 H12   
+    7 H7       0.000000
+    8 H8       4.957768        0.000000
+    9 H9       8.146307        4.905538        0.000000
+   10 H10      8.517544        8.146311        4.957717        0.000000
+   11 H11      8.044170        9.204640        7.802261        4.826695        0.000000
+   12 H12      4.826755        7.802214        9.204636        8.044224        4.861946        0.000000
+   13 B13      4.548156        6.654691        6.654687        4.548238        4.947276        4.947358
+
+              13 B13   
+   13 B13      0.000000
+
+                    ******************************************* 
+                    *    InterNuclear Distances / angstrom    * 
+                    ******************************************* 
+
+               1 C1            2 C2            3 C3            4 C4            5 C5            6 C6    
+    1 C1       0.000000
+    2 C2       1.493637        0.000000
+    3 C3       2.334452        1.329272        0.000000
+    4 C4       2.421435        2.334468        1.493640        0.000000
+    5 C5       2.355904        2.835178        2.492569        1.491669        0.000000
+    6 C6       1.491705        2.492584        2.835207        2.355905        1.373217        0.000000
+    7 H7       1.081902        2.232221        3.312731        3.476299        3.308740        2.181355
+    8 H8       2.266733        1.081600        2.149538        3.379925        3.826745        3.328579
+    9 H9       3.379913        2.149539        1.081600        2.266721        3.328558        3.826777
+   10 H10      3.476289        3.312738        2.232213        1.081901        2.181354        3.308750
+   11 H11      3.380330        3.900690        3.434453        2.279603        1.081140        2.168383
+   12 H12      2.279659        3.434438        3.900696        3.380339        2.168396        1.081134
+   13 B13      1.628568        2.492831        2.492829        1.628616        1.784238        1.784215
+
+               7 H7            8 H8            9 H9           10 H10          11 H11          12 H12   
+    7 H7       0.000000
+    8 H8       2.623538        0.000000
+    9 H9       4.310840        2.595899        0.000000
+   10 H10      4.507290        4.310842        2.623511        0.000000
+   11 H11      4.256792        4.870886        4.128778        2.554177        0.000000
+   12 H12      2.554209        4.128754        4.870884        4.256820        2.572831        0.000000
+   13 B13      2.406780        3.521511        3.521509        2.406824        2.617986        2.618029
+
+              13 B13   
+   13 B13      0.000000
+
+                    ************************************** 
+                    *    Valence Bond Angles / degree    * 
+                    ************************************** 
+                          Atom centers                 Phi
+                      2 C2       1 C1       6 C6       113.22
+                      2 C2       1 C1       7 H7       119.29
+                      6 C6       1 C1       7 H7       114.97
+                      1 C1       2 C2       3 C3       111.44
+                      1 C1       2 C2       8 H8       122.53
+                      3 C3       2 C2       8 H8       125.84
+                      2 C2       3 C3       4 C4       111.45
+                      2 C2       3 C3       9 H9       125.84
+                      4 C4       3 C3       9 H9       122.52
+                      3 C3       4 C4       5 C5       113.22
+                      3 C3       4 C4      10 H10      119.29
+                      5 C5       4 C4      10 H10      114.97
+                      4 C4       5 C5       6 C6       110.57
+                      4 C4       5 C5      11 H11      123.98
+                      6 C6       5 C5      11 H11      123.70
+                      1 C1       6 C6       5 C5       110.57
+                      1 C1       6 C6      12 H12      123.98
+                      5 C5       6 C6      12 H12      123.70
+
+           ***************************************************************
+           *              Valence Dihedral Angles / degree               *
+           ***************************************************************
+                    Atom centers                       Phi1     Phi2     Theta 
+           6 C6       1 C1       2 C2       8 H8        113.22   122.53  -120.67
+           7 H7       1 C1       2 C2       8 H8        119.29   122.53    19.45
+           2 C2       1 C1       6 C6       5 C5        113.22   110.57   -54.13
+           2 C2       1 C1       6 C6      12 H12       113.22   123.98   140.50
+           7 H7       1 C1       6 C6      12 H12       114.97   123.98    -1.42
+           3 C3       2 C2       1 C1       6 C6        111.44   113.22    54.60
+           3 C3       2 C2       1 C1       7 H7        111.44   119.29  -165.28
+           1 C1       2 C2       3 C3       4 C4        111.44   111.45    -0.00
+           1 C1       2 C2       3 C3       9 H9        111.44   125.84  -175.08
+           8 H8       2 C2       3 C3       9 H9        125.84   125.84     0.00
+           4 C4       3 C3       2 C2       8 H8        111.45   125.84   175.08
+           2 C2       3 C3       4 C4       5 C5        111.45   113.22   -54.60
+           2 C2       3 C3       4 C4      10 H10       111.45   119.29   165.28
+           9 H9       3 C3       4 C4      10 H10       122.52   119.29   -19.46
+           5 C5       4 C4       3 C3       9 H9        113.22   122.52   120.67
+           3 C3       4 C4       5 C5       6 C6        113.22   110.57    54.13
+           3 C3       4 C4       5 C5      11 H11       113.22   123.98  -140.51
+          10 H10      4 C4       5 C5      11 H11       114.97   123.98     1.41
+           6 C6       5 C5       4 C4      10 H10       110.57   114.97  -163.95
+           4 C4       5 C5       6 C6      12 H12       110.57   123.70   165.42
+          11 H11      5 C5       6 C6      12 H12       123.70   123.70     0.01
+           5 C5       6 C6       1 C1       7 H7        110.57   114.97   163.95
+           1 C1       6 C6       5 C5       4 C4        110.57   110.57    -0.00
+           1 C1       6 C6       5 C5      11 H11       110.57   123.70  -165.41
+--
+
+
+            Nuclear Potential Energy            257.70668174 au
+
+--- Stop Module: gateway at Thu Sep 17 18:07:20 2026 /rc=_RC_ALL_IS_WELL_ ---
+*** files: B-C6H6_A.RICDLib xmldump
+    saved to directory /Users/lucas/Development/Honors/OpenMolcas/build/CALCULATIONS/B-C6H6_A_gnd_st/$CurrDir/output
+
+--- Start Module: seward at Thu Sep 17 18:07:20 2026 ---
+
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &SEWARD
+
+                                   only a single process is used
+                       available to each process: 5.0 GB of memory, 1 thread?
+                                             pid: 52262
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+               SEWARD will generate:
+                  Multipole Moment integrals up to order  2
+                  Kinetic Energy integrals
+                  Nuclear Attraction integrals (point charge)
+                  One-Electron Hamiltonian integrals
+                  Velocity integrals
+                  Orbital angular momentum around (  0.0196   0.0000   0.0545 )
+                  Velocity quadrupole around (  0.0196   0.0000   0.0545 )
+                  RI decomposed two-electron repulsion integrals stored Cholesky style
+                   - acCD auxiliary basis
+                   - CD Threshold:   1.00E-04
+
+                   Integrals are discarded if absolute value <: 1.00E-14
+                   Integral cutoff threshold is set to       <: 1.00E-16
+
+            Nuclear Potential Energy            257.70668174 au
+
+
+      Basis set specifications :
+      Symmetry species         a  
+      Basis functions          117
+
+
+      Input file to MOLDEN was generated!
+
+--- Stop Module: seward at Thu Sep 17 18:07:21 2026 /rc=_RC_ALL_IS_WELL_ ---
+*** files: B-C6H6_A.GssOrb B-C6H6_A.guessorb.h5 B-C6H6_A.guessorb.molden xmldump
+    saved to directory /Users/lucas/Development/Honors/OpenMolcas/build/CALCULATIONS/B-C6H6_A_gnd_st/$CurrDir/output
+--- Module seward spent 1 second ---
+
+*** symbolic link created: INPORB -> B-C6H6_A.GssOrb
+--- Start Module: rasscf at Thu Sep 17 18:07:21 2026 ---
+
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &RASSCF
+
+                                   only a single process is used
+                       available to each process: 5.0 GB of memory, 1 thread?
+                                             pid: 52266
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+
+      Header of the ONEINT file:
+      --------------------------
+      
+      Integrals generated by Gateway/Seward, Thu Sep 17 18:07:20 2026
+
+
+      OrdInt status: non-squared
+
+
+      Cartesian coordinates in angstrom:
+      -----------------------------------------------------
+      No.  Label        X            Y            Z        
+      -----------------------------------------------------
+       1   C1        -0.04355100   1.21071200   0.29745900
+       2   C2        -1.34546800   0.66464800  -0.19016700
+       3   C3        -1.34548600  -0.66462400  -0.19013200
+       4   C4        -0.04355800  -1.21072300   0.29743200
+       5   C5         1.13285100  -0.68662000  -0.45520000
+       6   C6         1.13289000   0.68659700  -0.45518600
+       7   H7         0.02132100   2.25364300   0.57781400
+       8   H8        -2.13715100   1.29796200  -0.56701000
+       9   H9        -2.13718000  -1.29793700  -0.56695400
+      10   H10        0.02127400  -2.25364700   0.57781900
+      11   H11        1.98822400  -1.28643500  -0.73345100
+      12   H12        1.98822600   1.28639600  -0.73355900
+      13   B13        0.66584400   0.00001500   1.12402200
+      -----------------------------------------------------
+      Nuclear repulsion energy =  257.70668174
+
+++    Wave function specifications:
+      -----------------------------
+
+      Number of closed shell electrons          46
+      Number of electrons in active shells       1
+      Max number of holes in RAS1 space          0
+      Max nr of electrons in RAS3 space          0
+      Number of inactive orbitals               23
+      Number of active orbitals                 13
+      Number of secondary orbitals              81
+      Spin quantum number                      0.5
+      State symmetry                             1
+--
+
+++    Orbital specifications:
+      -----------------------
+
+      Symmetry species                           1
+                                                 a
+      Frozen orbitals                            0
+      Inactive orbitals                         23
+      Active orbitals                           13
+      RAS1 orbitals                              0
+      RAS2 orbitals                             13
+      RAS3 orbitals                              0
+      Secondary orbitals                        81
+      Deleted orbitals                           0
+      Number of basis functions                117
+--
+
+++    CI expansion specifications:
+      ----------------------------
+
+      Number of CSFs                            13
+      Number of determinants                    13
+      Number of root(s) required                 1
+      Root chosen for geometry opt.              1
+      CI root used                               1
+         
+      highest root included in the CI            1
+      max. size of the explicit Hamiltonian     13
+--
+
+++    Optimization specifications:
+      ----------------------------
+
+      RASSCF algorithm: LK RI/DF
+      Maximum number of macro iterations       200
+      Maximum number of SX iterations          100
+      Threshold for RASSCF energy            1.000E-08
+      Threshold for max MO rotation          1.000E-01
+      Threshold for max BLB element          1.000E-04
+      Level shift parameter                  5.000E-01
+      Make Quasi-Newton update
+--
+
+      Orbitals from runfile: guessorb orbitals
+      The MO-coefficients are taken from guessorb on runfile
+
+      Total molecular charge    0.00
+
+      ************************************************************************************************************************
+      *                                                                                                                      *
+      *                                            Wave function control section                                             *
+      *                                                                                                                      *
+      ************************************************************************************************************************
+
+
+                                         RASSCF iterations: Energy and convergence statistics
+                                         ----------------------------------------------------
+
+      Iter CI   SX   CI       RASSCF       Energy    max ROT     max BLB   max BLB  Level Ln srch  Step   QN   Walltime
+          iter iter root      energy       change     param      element    value   shift minimum  type update hh:mm:ss
+ Nr of preliminary CI iterations:   1
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  25 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  2.232187E-09
+  Warning: In symmetry  1, orbital p=  26 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  8.005513E-11
+  Warning: In symmetry  1, orbital p=  30 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  8.506676E-12
+  Warning: In symmetry  1, orbital p=  31 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  3.004498E-12
+  Warning: In symmetry  1, orbital p=  33 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  1.481893E-10
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  1.953079E-11
+        1   1    2    1  -254.65927666    0.00E+00   2.17E-02   17  61 1  2.18E-01*  0.21   0.00    SX    NO    0:00:00
+        2   1   45    1  -254.65932576   -4.91E-05*  1.58E-01*  17  61 1  2.18E-01*  0.21   0.00    SX    NO    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  33 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  6.700073E-07
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  4.291228E-07
+        3   1   19    1  -255.16978539   -5.10E-01*  3.74E-01*  13  52 1  7.15E-02*  0.22   0.00    SX    NO    0:00:00
+        4   1   50    1  -255.23275330   -6.30E-02*  3.60E-02   19 111 1  2.87E-02*  0.21   0.00    SX    NO    0:00:00
+        5   1   76    1  -255.24815487   -1.54E-02*  1.80E-02   19  26 1 -1.06E-02*  0.21   1.59    LS   YES    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  9.544012E-07
+        6   1   49    1  -255.25068932   -2.53E-03*  1.53E-02   21  25 1  1.31E-02*  0.22   1.23    QN   YES    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  3.974221E-07
+        7   1   41    1  -255.25188787   -1.20E-03*  1.31E-02   21  25 1  7.96E-03*  0.21   1.39    QN   YES    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  2.502783E-07
+        8   1   48    1  -255.25220197   -3.14E-04*  5.57E-03   21  25 1  2.33E-03*  0.22   1.32    QN   YES    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  2.615523E-07
+        9   1   41    1  -255.25225352   -5.16E-05*  1.78E-03   23  27 1 -7.24E-04*  0.22   1.27    QN   YES    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  2.811943E-07
+       10   1   42    1  -255.25226083   -7.31E-06* -6.53E-04   18  26 1 -2.52E-04*  0.22   1.23    QN   YES    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  2.772897E-07
+       11   1   36    1  -255.25226172   -8.85E-07* -2.99E-04   18  26 1 -8.06E-05   0.22   1.13    QN   YES    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  2.709917E-07
+       12   1   16    1  -255.25226181   -8.92E-08* -2.74E-04   19 111 1 -3.36E-05   0.22   1.15    QN   YES    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  2.660311E-07
+       13   1    5    1  -255.25226182   -1.25E-08* -1.01E-04   23 111 1  1.47E-05   0.22   1.18    QN   YES    0:00:00
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: Problems in orbital optimization.                           ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+  Warning: In symmetry  1, orbital p=  35 has diagonal density matrix element D(p,p) close to zero. D(p,p)=  2.637161E-07
+       14   1    4    1  -255.25226182   -6.89E-10   1.11E-04   23 111 1  1.42E-05   0.22   1.20    QN   YES    0:00:00
+      Convergence after 14 iterations
+       15   1    4    1  -255.25226182   -5.82E-10   1.11E-04   23 111 1  1.28E-05   0.22   1.20    QN   YES    0:00:00
+
+      ************************************************************************************************************************
+                                                      Wave function printout:
+                       occupation of active orbitals, and spin coupling of open shells (u,d: Spin up or down)
+      ************************************************************************************************************************
+
+      Note: transformation to natural orbitals
+      has been made, which may change the order of the CSFs.
+
+      printout of CI-coefficients larger than  0.05 for root  1
+      energy=    -255.252262
+
+      Occupation of active orbitals, and spin coupling of open shells. (u,d: Spin up or down).
+
+         Conf   Occupation     Coeff  Weight
+            1 u000000000000  1.00000 1.00000
+
+      ************************************************************************************************************************
+
+      Natural orbitals and occupation numbers for root  1
+      sym 1:   1.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+               0.000000   0.000000   0.000000
+
+      ************************************************************************************************************************
+      *                                                                                                                      *
+      *                                                    Final results                                                     *
+      *                                                                                                                      *
+      ************************************************************************************************************************
+
+
+++    Final optimization conditions:
+      ------------------------------
+
+      Average CI energy                            -255.25226182
+      RASSCF energy for state  1                   -255.25226182
+      Super-CI energy                                -0.00000000
+      RASSCF energy change                           -0.00000000
+      Max change in MO coefficients              -4.785E-04
+      Max non-diagonal density matrix element     1.110E-04
+      Maximum BLB matrix element                  1.277E-05
+      (orbital pair  23, 111 in symmetry   1)
+      Norm of electronic gradient            5.788E-05
+--
+
+
+      Final state energy(ies):
+      ------------------------
+
+::    RASSCF root number  1 Total energy:   -255.25226182
+
+++    Molecular orbitals:
+      -------------------
+
+      Pseudonatural active orbitals and approximate occupation numbers
+
+
+
+
+      Molecular orbitals for symmetry species 1: a  
+
+
+      Orbital                 1         2         3         4         5         6         7         8         9        10
+      Energy           -11.2687  -11.2673  -11.2237  -11.2237  -11.2169  -11.2152   -7.5924   -1.2002   -1.0385   -0.9892
+      Occ. No.           2.0000    2.0000    2.0000    2.0000    2.0000    2.0000    2.0000    2.0000    2.0000    2.0000
+
+     1 C1     1s         0.0055    0.0061   -0.7336   -0.6720   -0.0352    0.0289   -0.0002   -0.0826    0.0271   -0.1233
+     2 C1     2s         0.0005    0.0008   -0.0217   -0.0192   -0.0006    0.0005    0.0004    0.1463   -0.0477    0.2343
+     3 C1     *s        -0.0008   -0.0006    0.0168    0.0123   -0.0004   -0.0021    0.0019    0.1256   -0.0547    0.2040
+     4 C1     2px        0.0001    0.0001   -0.0004   -0.0003   -0.0000    0.0001    0.0001    0.0271    0.0939    0.0259
+     5 C1     *px        0.0006    0.0010    0.0009    0.0004   -0.0011    0.0014    0.0000    0.0041    0.0112    0.0093
+     6 C1     2py       -0.0001   -0.0001    0.0006    0.0004   -0.0000   -0.0001   -0.0001   -0.0555    0.0102   -0.0036
+     7 C1     *py        0.0013    0.0012   -0.0048   -0.0023    0.0013    0.0002    0.0001   -0.0263    0.0169    0.0061
+     8 C1     2pz       -0.0000    0.0001    0.0003    0.0003    0.0000   -0.0000    0.0000   -0.0256    0.0053   -0.0334
+     9 C1     *pz       -0.0006   -0.0004   -0.0020   -0.0004   -0.0001   -0.0001    0.0015   -0.0041    0.0045   -0.0055
+    10 C1     *200      -0.0001   -0.0001    0.0006    0.0006   -0.0001    0.0002   -0.0001    0.0036   -0.0017    0.0051
+    11 C1     *110       0.0001    0.0001    0.0000    0.0000   -0.0000    0.0001    0.0001   -0.0039   -0.0098   -0.0017
+    12 C1     *101       0.0001    0.0002   -0.0000    0.0000   -0.0001    0.0001   -0.0001   -0.0017   -0.0076   -0.0016
+    13 C1     *020       0.0000   -0.0001    0.0006    0.0004    0.0000    0.0001   -0.0001    0.0027   -0.0011    0.0032
+    14 C1     *011       0.0000   -0.0001    0.0000   -0.0001   -0.0000    0.0001    0.0001    0.0041   -0.0014    0.0060
+    15 C1     *002      -0.0000   -0.0000    0.0006    0.0007    0.0000    0.0000   -0.0000   -0.0017    0.0014   -0.0016
+    16 C2     1s        -0.0002   -0.0001   -0.0303   -0.0336    0.7056   -0.7010   -0.0001   -0.0571    0.1306   -0.0471
+    17 C2     2s        -0.0003   -0.0004   -0.0009   -0.0009    0.0194   -0.0198   -0.0005    0.1072   -0.2476    0.0900
+    18 C2     *s         0.0008    0.0039   -0.0065   -0.0021   -0.0057    0.0141    0.0009    0.0551   -0.1818    0.0742
+    19 C2     2px       -0.0001   -0.0001   -0.0001   -0.0001    0.0003   -0.0003   -0.0000    0.0404   -0.0148    0.0483
+    20 C2     *px        0.0009    0.0019   -0.0032   -0.0013   -0.0005    0.0019    0.0012   -0.0002    0.0023    0.0110
+    21 C2     2py        0.0001   -0.0000   -0.0000   -0.0001    0.0001    0.0001    0.0001   -0.0278    0.0872    0.0579
+    22 C2     *py       -0.0004   -0.0014    0.0012   -0.0001   -0.0007   -0.0028   -0.0008   -0.0003    0.0032    0.0093
+    23 C2     2pz        0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0001    0.0098   -0.0067    0.0143
+    24 C2     *pz        0.0002    0.0006   -0.0007   -0.0003   -0.0001    0.0006    0.0004   -0.0010    0.0008    0.0037
+    25 C2     *200       0.0000    0.0000    0.0002    0.0001   -0.0008    0.0006    0.0000    0.0025   -0.0003    0.0058
+    26 C2     *110      -0.0000   -0.0001    0.0001    0.0002   -0.0001    0.0000   -0.0000   -0.0002    0.0027    0.0040
+    27 C2     *101      -0.0000    0.0000    0.0001    0.0000    0.0001   -0.0002    0.0001    0.0035   -0.0055    0.0057
+    28 C2     *020      -0.0000   -0.0001    0.0001    0.0001   -0.0007    0.0005   -0.0000    0.0024   -0.0077   -0.0010
+    29 C2     *011       0.0000    0.0000    0.0001    0.0001   -0.0000    0.0001   -0.0000    0.0003    0.0011    0.0009
+    30 C2     *002      -0.0001   -0.0001    0.0001    0.0001   -0.0009    0.0008   -0.0001   -0.0024    0.0048   -0.0015
+    31 C3     1s        -0.0002    0.0001    0.0273   -0.0361    0.7003    0.7064   -0.0001   -0.0571    0.1306    0.0471
+    32 C3     2s        -0.0003    0.0004    0.0008   -0.0009    0.0193    0.0200   -0.0005    0.1072   -0.2476   -0.0900
+    33 C3     *s         0.0008   -0.0039    0.0063   -0.0027   -0.0056   -0.0141    0.0009    0.0551   -0.1818   -0.0743
+    34 C3     2px       -0.0001    0.0001    0.0001   -0.0001    0.0003    0.0004   -0.0000    0.0404   -0.0148   -0.0483
+    35 C3     *px        0.0009   -0.0019    0.0031   -0.0015   -0.0005   -0.0019    0.0012   -0.0002    0.0023   -0.0110
+    36 C3     2py       -0.0001   -0.0000    0.0000    0.0001   -0.0001    0.0001   -0.0001    0.0278   -0.0872    0.0579
+    37 C3     *py        0.0004   -0.0014    0.0012   -0.0000    0.0007   -0.0028    0.0008    0.0003   -0.0032    0.0093
+    38 C3     2pz        0.0000    0.0000    0.0000   -0.0000   -0.0000    0.0000   -0.0001    0.0098   -0.0067   -0.0143
+    39 C3     *pz        0.0002   -0.0006    0.0007   -0.0004   -0.0001   -0.0006    0.0004   -0.0010    0.0008   -0.0037
+    40 C3     *200       0.0000   -0.0000   -0.0002    0.0001   -0.0008   -0.0006    0.0000    0.0025   -0.0003   -0.0058
+    41 C3     *110       0.0000   -0.0001    0.0001   -0.0002    0.0001    0.0000    0.0000    0.0002   -0.0027    0.0040
+    42 C3     *101      -0.0000   -0.0000   -0.0001    0.0001    0.0001    0.0002    0.0001    0.0035   -0.0055   -0.0057
+    43 C3     *020      -0.0000    0.0001   -0.0001    0.0001   -0.0007   -0.0005   -0.0000    0.0024   -0.0077    0.0010
+    44 C3     *011      -0.0000    0.0000    0.0001   -0.0001    0.0000    0.0001    0.0000   -0.0003   -0.0011    0.0009
+    45 C3     *002      -0.0001    0.0001   -0.0001    0.0001   -0.0009   -0.0008   -0.0001   -0.0024    0.0048    0.0015
+    46 C4     1s         0.0056   -0.0061    0.6724   -0.7333   -0.0349   -0.0292   -0.0002   -0.0826    0.0271    0.1233
+    47 C4     2s         0.0005   -0.0008    0.0200   -0.0210   -0.0006   -0.0005    0.0004    0.1463   -0.0477   -0.2343
+    48 C4     *s        -0.0008    0.0006   -0.0157    0.0138   -0.0004    0.0021    0.0019    0.1256   -0.0547   -0.2040
+    49 C4     2px        0.0001   -0.0001    0.0004   -0.0003   -0.0000   -0.0001    0.0001    0.0272    0.0939   -0.0258
+    50 C4     *px        0.0006   -0.0010   -0.0009    0.0005   -0.0011   -0.0014   -0.0000    0.0041    0.0112   -0.0093
+    51 C4     2py        0.0001   -0.0001    0.0005   -0.0005    0.0000   -0.0001    0.0001    0.0555   -0.0102   -0.0036
+    52 C4     *py       -0.0013    0.0011   -0.0046    0.0028   -0.0013    0.0002   -0.0001    0.0264   -0.0169    0.0061
+    53 C4     2pz       -0.0000   -0.0001   -0.0003    0.0003    0.0000    0.0000    0.0000   -0.0256    0.0053    0.0334
+    54 C4     *pz       -0.0006    0.0004    0.0020   -0.0005   -0.0001    0.0001    0.0015   -0.0041    0.0045    0.0055
+    55 C4     *200      -0.0001    0.0001   -0.0005    0.0006   -0.0001   -0.0002   -0.0001    0.0036   -0.0017   -0.0051
+    56 C4     *110      -0.0001    0.0001    0.0000   -0.0000    0.0000    0.0001   -0.0001    0.0039    0.0098   -0.0017
+    57 C4     *101       0.0001   -0.0002    0.0000    0.0000   -0.0001   -0.0001   -0.0001   -0.0017   -0.0076    0.0016
+    58 C4     *020       0.0000    0.0001   -0.0005    0.0005    0.0000   -0.0001   -0.0001    0.0027   -0.0011   -0.0032
+    59 C4     *011      -0.0000   -0.0001    0.0000    0.0001    0.0000    0.0001   -0.0001   -0.0041    0.0014    0.0060
+    60 C4     *002      -0.0000    0.0000   -0.0005    0.0007    0.0000   -0.0000   -0.0000   -0.0017    0.0014    0.0016
+    61 C5     1s         0.7065   -0.7017   -0.0059    0.0059    0.0003    0.0002   -0.0002   -0.1086   -0.0827    0.0701
+    62 C5     2s         0.0200   -0.0198    0.0002   -0.0000   -0.0004   -0.0004    0.0003    0.2046    0.1598   -0.1370
+    63 C5     *s        -0.0081    0.0129    0.0046   -0.0021    0.0008    0.0027    0.0037    0.1345    0.1365   -0.1209
+    64 C5     2px       -0.0001    0.0002   -0.0001    0.0001    0.0001    0.0001   -0.0001   -0.0439    0.0243    0.0521
+    65 C5     *px        0.0005   -0.0008   -0.0028    0.0012   -0.0011   -0.0018    0.0001   -0.0014    0.0053    0.0067
+    66 C5     2py        0.0002   -0.0004    0.0000    0.0000   -0.0001    0.0001    0.0000    0.0672    0.0716    0.0804
+    67 C5     *py        0.0001    0.0025   -0.0006    0.0005    0.0003    0.0009   -0.0003    0.0072    0.0077    0.0144
+    68 C5     2pz        0.0006   -0.0006    0.0001    0.0000    0.0000   -0.0000   -0.0000    0.0454    0.0145   -0.0427
+    69 C5     *pz       -0.0017    0.0012    0.0009   -0.0001    0.0003    0.0007    0.0010    0.0117    0.0076   -0.0111
+    70 C5     *200      -0.0006    0.0006   -0.0001    0.0000    0.0000   -0.0000   -0.0000    0.0005   -0.0014   -0.0060
+    71 C5     *110      -0.0001    0.0001   -0.0001    0.0002    0.0000   -0.0000    0.0000   -0.0018   -0.0031   -0.0022
+    72 C5     *101      -0.0001    0.0002    0.0002   -0.0001   -0.0001   -0.0001    0.0002   -0.0084   -0.0031    0.0106
+    73 C5     *020      -0.0007    0.0004   -0.0001    0.0000   -0.0000   -0.0001   -0.0001    0.0050    0.0058    0.0027
+    74 C5     *011       0.0000   -0.0000    0.0001   -0.0001   -0.0000   -0.0000   -0.0002    0.0031    0.0035    0.0026
+    75 C5     *002      -0.0008    0.0008   -0.0000    0.0001   -0.0001   -0.0001   -0.0003   -0.0014   -0.0012   -0.0008
+    76 C6     1s         0.7014    0.7068    0.0064    0.0053    0.0003   -0.0002   -0.0002   -0.1086   -0.0827   -0.0701
+    77 C6     2s         0.0198    0.0199   -0.0002    0.0000   -0.0004    0.0004    0.0003    0.2046    0.1598    0.1370
+    78 C6     *s        -0.0080   -0.0130   -0.0048   -0.0017    0.0008   -0.0027    0.0037    0.1346    0.1365    0.1209
+    79 C6     2px       -0.0001   -0.0002    0.0001    0.0001    0.0001   -0.0001   -0.0001   -0.0439    0.0243   -0.0521
+    80 C6     *px        0.0005    0.0008    0.0029    0.0010   -0.0011    0.0018    0.0001   -0.0014    0.0053   -0.0067
+    81 C6     2py       -0.0002   -0.0004    0.0000   -0.0000    0.0001    0.0001   -0.0000   -0.0672   -0.0716    0.0803
+    82 C6     *py       -0.0001    0.0025   -0.0006   -0.0005   -0.0004    0.0009    0.0003   -0.0072   -0.0077    0.0144
+    83 C6     2pz        0.0006    0.0006   -0.0001    0.0000    0.0000    0.0000   -0.0000    0.0454    0.0145    0.0427
+    84 C6     *pz       -0.0017   -0.0012   -0.0009   -0.0001    0.0003   -0.0007    0.0010    0.0117    0.0076    0.0111
+    85 C6     *200      -0.0006   -0.0006    0.0001    0.0000    0.0000    0.0000   -0.0000    0.0005   -0.0014    0.0060
+    86 C6     *110       0.0001    0.0001   -0.0001   -0.0002   -0.0000   -0.0000   -0.0000    0.0018    0.0031   -0.0022
+    87 C6     *101      -0.0001   -0.0002   -0.0002   -0.0001   -0.0001    0.0001    0.0002   -0.0084   -0.0031   -0.0106
+    88 C6     *020      -0.0007   -0.0004    0.0001   -0.0000   -0.0001    0.0001   -0.0001    0.0050    0.0058   -0.0027
+    89 C6     *011      -0.0000   -0.0000    0.0001    0.0001    0.0000   -0.0000    0.0002   -0.0031   -0.0035    0.0026
+    90 C6     *002      -0.0008   -0.0008    0.0000    0.0001   -0.0001    0.0001   -0.0003   -0.0014   -0.0012    0.0008
+    91 H7     1s        -0.0001   -0.0001    0.0001    0.0001   -0.0001    0.0000   -0.0001    0.0274   -0.0118    0.0800
+    92 H7     *s        -0.0003   -0.0005   -0.0001   -0.0011   -0.0005    0.0003   -0.0002    0.0064   -0.0087    0.0188
+    93 H8     1s         0.0001    0.0001    0.0000    0.0001   -0.0002    0.0002    0.0001    0.0170   -0.0621    0.0304
+    94 H8     *s         0.0003    0.0006   -0.0007   -0.0003    0.0013   -0.0009    0.0007   -0.0011   -0.0078    0.0095
+    95 H9     1s         0.0001   -0.0001    0.0000    0.0001   -0.0002   -0.0002    0.0001    0.0170   -0.0621   -0.0304
+    96 H9     *s         0.0003   -0.0006    0.0006   -0.0004    0.0013    0.0009    0.0007   -0.0011   -0.0078   -0.0095
+    97 H10    1s        -0.0001    0.0001   -0.0001    0.0001   -0.0001   -0.0000   -0.0001    0.0274   -0.0118   -0.0800
+    98 H10    *s        -0.0003    0.0005    0.0001   -0.0011   -0.0005   -0.0003   -0.0002    0.0064   -0.0087   -0.0188
+    99 H11    1s        -0.0001    0.0001    0.0000    0.0001    0.0001    0.0001   -0.0002    0.0365    0.0470   -0.0475
+   100 H11    *s         0.0013   -0.0011    0.0002   -0.0001    0.0005    0.0007   -0.0002   -0.0000    0.0080   -0.0123
+   101 H12    1s        -0.0001   -0.0001   -0.0000    0.0001    0.0001   -0.0001   -0.0002    0.0365    0.0470    0.0475
+   102 H12    *s         0.0013    0.0011   -0.0003   -0.0001    0.0005   -0.0007   -0.0002   -0.0000    0.0080    0.0123
+   103 B13    1s        -0.0001   -0.0000   -0.0000   -0.0000   -0.0001   -0.0000    0.9968   -0.0646   -0.0152   -0.0000
+   104 B13    2s         0.0003    0.0000   -0.0000   -0.0006   -0.0008   -0.0000    0.0248    0.0984    0.0273    0.0000
+   105 B13    *s         0.0062    0.0000   -0.0003   -0.0068    0.0030    0.0000   -0.0176   -0.0197    0.0103    0.0000
+   106 B13    2px        0.0000    0.0000    0.0000    0.0004   -0.0002   -0.0000    0.0000   -0.0143    0.0323    0.0000
+   107 B13    *px        0.0003    0.0000    0.0001    0.0018   -0.0010   -0.0000    0.0013    0.0059   -0.0061    0.0000
+   108 B13    2py       -0.0000    0.0004   -0.0008    0.0000   -0.0000    0.0002   -0.0000    0.0000   -0.0000    0.0978
+   109 B13    *py       -0.0000    0.0012   -0.0018    0.0001   -0.0000    0.0000   -0.0000   -0.0000    0.0000   -0.0065
+   110 B13    2pz       -0.0004   -0.0000    0.0000    0.0002    0.0000    0.0000   -0.0030   -0.0853   -0.0397   -0.0000
+   111 B13    *pz       -0.0028   -0.0000    0.0001    0.0022   -0.0011   -0.0000    0.0057    0.0198   -0.0016    0.0000
+   112 B13    *200      -0.0001   -0.0000    0.0000    0.0001    0.0001    0.0000    0.0002   -0.0010   -0.0019    0.0000
+   113 B13    *110      -0.0000    0.0001    0.0000   -0.0000   -0.0000    0.0001    0.0000   -0.0000    0.0000   -0.0079
+   114 B13    *101      -0.0000    0.0000    0.0000    0.0000    0.0003    0.0000    0.0001   -0.0002   -0.0086   -0.0000
+   115 B13    *020      -0.0002   -0.0000    0.0000    0.0002    0.0000    0.0000    0.0004    0.0027   -0.0005    0.0000
+   116 B13    *011       0.0000   -0.0000   -0.0003    0.0000    0.0000   -0.0000   -0.0000    0.0000    0.0000   -0.0205
+   117 B13    *002      -0.0003   -0.0000    0.0000    0.0002   -0.0000   -0.0000    0.0004    0.0104    0.0068    0.0000
+
+
+      Orbital                11        12        13        14        15        16        17        18        19        20
+      Energy            -0.8491   -0.7911   -0.7297   -0.6725   -0.6368   -0.6030   -0.5677   -0.5543   -0.5062   -0.4888
+      Occ. No.           2.0000    2.0000    2.0000    2.0000    2.0000    2.0000    2.0000    2.0000    2.0000    2.0000
+
+     1 C1     1s         0.0914    0.0210   -0.0382    0.0576   -0.0087    0.0084    0.0065    0.0110   -0.0007   -0.0193
+     2 C1     2s        -0.1745   -0.0416    0.0793   -0.1163    0.0108   -0.0167   -0.0140   -0.0231   -0.0020    0.0381
+     3 C1     *s        -0.1918   -0.0513    0.0767   -0.0994    0.0476   -0.0088   -0.0236   -0.0251   -0.0083    0.0661
+     4 C1     2px       -0.0289    0.1610   -0.0218   -0.0449   -0.1401    0.0860    0.1750   -0.0599    0.0560   -0.2475
+     5 C1     *px       -0.0128    0.0490   -0.0001   -0.0288   -0.0485    0.0362    0.0750   -0.0143    0.0360   -0.1260
+     6 C1     2py       -0.0128   -0.0106    0.1878   -0.0608   -0.0504   -0.0473   -0.0189    0.2744    0.2055   -0.0494
+     7 C1     *py       -0.0131    0.0022    0.0925   -0.0710   -0.0432   -0.0303   -0.0124    0.1479    0.1298   -0.0352
+     8 C1     2pz       -0.0331   -0.0038   -0.0037   -0.0752   -0.0509    0.1498   -0.1612    0.1076    0.0467   -0.0737
+     9 C1     *pz       -0.0131    0.0015   -0.0015   -0.0468   -0.0293    0.0785   -0.0776    0.0463    0.0227   -0.0528
+    10 C1     *200       0.0012   -0.0012    0.0002    0.0044   -0.0002    0.0006    0.0012   -0.0069   -0.0064    0.0017
+    11 C1     *110       0.0026   -0.0074    0.0062    0.0016    0.0125    0.0003   -0.0029    0.0085    0.0037    0.0119
+    12 C1     *101      -0.0011   -0.0109   -0.0007   -0.0010    0.0025    0.0019   -0.0121    0.0031   -0.0032    0.0062
+    13 C1     *020      -0.0062   -0.0014    0.0034   -0.0081   -0.0014    0.0026   -0.0050    0.0115    0.0100   -0.0022
+    14 C1     *011      -0.0002   -0.0012    0.0034   -0.0023    0.0025   -0.0104    0.0052    0.0025    0.0097    0.0023
+    15 C1     *002       0.0022    0.0012   -0.0001    0.0020    0.0004   -0.0024    0.0034   -0.0024   -0.0014    0.0002
+    16 C2     1s        -0.0629    0.0879   -0.0030   -0.0619    0.0034   -0.0091   -0.0019    0.0138   -0.0086   -0.0059
+    17 C2     2s         0.1215   -0.1751    0.0038    0.1232   -0.0068    0.0184    0.0036   -0.0275    0.0201    0.0165
+    18 C2     *s         0.1158   -0.1419    0.0286    0.0856   -0.0314    0.0027   -0.0034   -0.0246    0.0071    0.0123
+    19 C2     2px       -0.0917   -0.0049   -0.0371   -0.0770    0.2390   -0.0569   -0.0123   -0.0624   -0.0274    0.2466
+    20 C2     *px       -0.0277    0.0208   -0.0030   -0.0678    0.0920   -0.0234    0.0004   -0.0195   -0.0029    0.1308
+    21 C2     2py       -0.0939   -0.1213    0.1062    0.0898   -0.0994   -0.2040   -0.1417    0.0012   -0.2783   -0.0095
+    22 C2     *py       -0.0108   -0.0580    0.0283    0.0658   -0.0420   -0.0731   -0.0513    0.0008   -0.1204   -0.0256
+    23 C2     2pz       -0.0447   -0.0035   -0.0133   -0.0430    0.1004    0.0543   -0.1140   -0.0071   -0.0073    0.1058
+    24 C2     *pz       -0.0157    0.0086   -0.0011   -0.0346    0.0392    0.0294   -0.0600   -0.0011   -0.0004    0.0570
+    25 C2     *200      -0.0038   -0.0061    0.0016    0.0032   -0.0016   -0.0066   -0.0021   -0.0040   -0.0093    0.0016
+    26 C2     *110      -0.0052    0.0033    0.0024   -0.0126    0.0071    0.0004   -0.0020   -0.0025    0.0061    0.0260
+    27 C2     *101      -0.0017   -0.0097    0.0020    0.0043   -0.0035   -0.0003   -0.0088   -0.0004   -0.0090   -0.0006
+    28 C2     *020       0.0058   -0.0000   -0.0002    0.0004   -0.0009    0.0036    0.0023    0.0039    0.0068   -0.0035
+    29 C2     *011      -0.0017    0.0017   -0.0001   -0.0066    0.0038   -0.0031    0.0048    0.0006    0.0043    0.0115
+    30 C2     *002      -0.0023    0.0017    0.0001   -0.0016   -0.0013    0.0002   -0.0022    0.0007   -0.0014   -0.0004
+    31 C3     1s        -0.0629   -0.0879   -0.0030    0.0619    0.0034   -0.0091   -0.0020   -0.0138   -0.0086    0.0059
+    32 C3     2s         0.1215    0.1751    0.0038   -0.1232   -0.0068    0.0184    0.0036    0.0275    0.0201   -0.0165
+    33 C3     *s         0.1158    0.1419    0.0286   -0.0856   -0.0314    0.0027   -0.0034    0.0246    0.0071   -0.0123
+    34 C3     2px       -0.0917    0.0049   -0.0372    0.0770    0.2390   -0.0568   -0.0123    0.0623   -0.0274   -0.2466
+    35 C3     *px       -0.0277   -0.0208   -0.0030    0.0678    0.0920   -0.0234    0.0004    0.0194   -0.0029   -0.1308
+    36 C3     2py        0.0939   -0.1213   -0.1062    0.0898    0.0994    0.2040    0.1417    0.0011    0.2783   -0.0095
+    37 C3     *py        0.0108   -0.0580   -0.0283    0.0658    0.0420    0.0731    0.0513    0.0008    0.1204   -0.0256
+    38 C3     2pz       -0.0447    0.0035   -0.0133    0.0430    0.1004    0.0543   -0.1140    0.0072   -0.0074   -0.1058
+    39 C3     *pz       -0.0157   -0.0086   -0.0011    0.0346    0.0392    0.0295   -0.0600    0.0012   -0.0004   -0.0570
+    40 C3     *200      -0.0038    0.0061    0.0016   -0.0032   -0.0016   -0.0066   -0.0021    0.0040   -0.0093   -0.0016
+    41 C3     *110       0.0052    0.0033   -0.0024   -0.0126   -0.0071   -0.0004    0.0020   -0.0025   -0.0061    0.0260
+    42 C3     *101      -0.0017    0.0097    0.0020   -0.0043   -0.0035   -0.0003   -0.0088    0.0004   -0.0090    0.0006
+    43 C3     *020       0.0058    0.0000   -0.0002   -0.0004   -0.0009    0.0036    0.0023   -0.0039    0.0068    0.0035
+    44 C3     *011       0.0017    0.0017    0.0001   -0.0066   -0.0038    0.0031   -0.0048    0.0006   -0.0043    0.0115
+    45 C3     *002      -0.0023   -0.0017    0.0001    0.0016   -0.0013    0.0002   -0.0022   -0.0007   -0.0014    0.0004
+    46 C4     1s         0.0914   -0.0210   -0.0382   -0.0576   -0.0087    0.0084    0.0065   -0.0110   -0.0007    0.0193
+    47 C4     2s        -0.1745    0.0415    0.0793    0.1163    0.0107   -0.0167   -0.0139    0.0231   -0.0020   -0.0381
+    48 C4     *s        -0.1918    0.0513    0.0767    0.0994    0.0476   -0.0088   -0.0236    0.0251   -0.0083   -0.0661
+    49 C4     2px       -0.0289   -0.1610   -0.0218    0.0449   -0.1401    0.0860    0.1751    0.0597    0.0560    0.2475
+    50 C4     *px       -0.0128   -0.0490   -0.0001    0.0288   -0.0485    0.0362    0.0750    0.0143    0.0360    0.1260
+    51 C4     2py        0.0128   -0.0106   -0.1878   -0.0608    0.0504    0.0473    0.0191    0.2744   -0.2055   -0.0494
+    52 C4     *py        0.0131    0.0022   -0.0925   -0.0710    0.0432    0.0302    0.0125    0.1479   -0.1298   -0.0352
+    53 C4     2pz       -0.0331    0.0038   -0.0036    0.0751   -0.0509    0.1498   -0.1614   -0.1074    0.0467    0.0737
+    54 C4     *pz       -0.0131   -0.0015   -0.0015    0.0468   -0.0293    0.0785   -0.0776   -0.0462    0.0227    0.0528
+    55 C4     *200       0.0012    0.0012    0.0002   -0.0044   -0.0002    0.0006    0.0012    0.0069   -0.0064   -0.0017
+    56 C4     *110      -0.0026   -0.0074   -0.0062    0.0016   -0.0125   -0.0003    0.0029    0.0085   -0.0037    0.0119
+    57 C4     *101      -0.0011    0.0109   -0.0007    0.0010    0.0025    0.0019   -0.0121   -0.0031   -0.0032   -0.0062
+    58 C4     *020      -0.0062    0.0014    0.0034    0.0081   -0.0014    0.0026   -0.0050   -0.0115    0.0100    0.0022
+    59 C4     *011       0.0002   -0.0012   -0.0034   -0.0023   -0.0025    0.0104   -0.0052    0.0025   -0.0097    0.0023
+    60 C4     *002       0.0022   -0.0012   -0.0001   -0.0020    0.0004   -0.0024    0.0034    0.0024   -0.0014   -0.0002
+    61 C5     1s        -0.0622    0.0809   -0.0167    0.0556   -0.0064    0.0200   -0.0094   -0.0168   -0.0104   -0.0016
+    62 C5     2s         0.1214   -0.1606    0.0311   -0.1106    0.0110   -0.0417    0.0148    0.0363    0.0229    0.0050
+    63 C5     *s         0.1286   -0.1790    0.0608   -0.1084    0.0131   -0.0393    0.0550    0.0675    0.0209    0.0208
+    64 C5     2px        0.1212   -0.0362    0.1205   -0.1154    0.0665    0.1607   -0.1617   -0.1771   -0.0435   -0.0884
+    65 C5     *px        0.0371   -0.0269    0.0452   -0.0811    0.0280    0.0903   -0.0844   -0.0994   -0.0329   -0.0596
+    66 C5     2py        0.1035    0.1048   -0.1679    0.0804   -0.0454   -0.1598   -0.2576    0.0141    0.1830    0.0052
+    67 C5     *py        0.0179    0.0388   -0.0575    0.0578   -0.0162   -0.0679   -0.1039    0.0225    0.0857    0.0115
+    68 C5     2pz       -0.0799   -0.0132   -0.0829    0.0637   -0.1382    0.1065    0.0175    0.0911   -0.0258    0.0973
+    69 C5     *pz       -0.0219   -0.0042   -0.0306    0.0340   -0.0649    0.0568    0.0026    0.0482   -0.0128    0.0586
+    70 C5     *200      -0.0016   -0.0046    0.0064   -0.0054    0.0052    0.0021    0.0072    0.0011   -0.0074   -0.0047
+    71 C5     *110      -0.0057    0.0081   -0.0012    0.0152   -0.0055   -0.0026   -0.0019    0.0120    0.0066    0.0089
+    72 C5     *101       0.0046    0.0084   -0.0009    0.0012    0.0010   -0.0042   -0.0077   -0.0063    0.0058   -0.0034
+    73 C5     *020       0.0072    0.0016   -0.0001   -0.0001    0.0002   -0.0059   -0.0062   -0.0059    0.0072   -0.0014
+    74 C5     *011       0.0021   -0.0009   -0.0060   -0.0068   -0.0062    0.0090   -0.0070   -0.0037   -0.0045   -0.0072
+    75 C5     *002      -0.0047   -0.0003   -0.0028    0.0036   -0.0053    0.0064   -0.0005    0.0037   -0.0015    0.0053
+    76 C6     1s        -0.0622   -0.0809   -0.0167   -0.0556   -0.0064    0.0200   -0.0094    0.0168   -0.0104    0.0016
+    77 C6     2s         0.1214    0.1606    0.0311    0.1106    0.0110   -0.0417    0.0148   -0.0363    0.0229   -0.0050
+    78 C6     *s         0.1286    0.1790    0.0608    0.1084    0.0131   -0.0393    0.0549   -0.0676    0.0209   -0.0208
+    79 C6     2px        0.1212    0.0362    0.1205    0.1153    0.0665    0.1607   -0.1615    0.1772   -0.0435    0.0884
+    80 C6     *px        0.0371    0.0269    0.0452    0.0811    0.0281    0.0903   -0.0843    0.0995   -0.0329    0.0596
+    81 C6     2py       -0.1035    0.1047    0.1679    0.0804    0.0454    0.1598    0.2576    0.0138   -0.1830    0.0052
+    82 C6     *py       -0.0179    0.0388    0.0575    0.0578    0.0162    0.0679    0.1040    0.0224   -0.0857    0.0114
+    83 C6     2pz       -0.0799    0.0132   -0.0829   -0.0637   -0.1382    0.1065    0.0174   -0.0911   -0.0258   -0.0973
+    84 C6     *pz       -0.0219    0.0042   -0.0306   -0.0340   -0.0649    0.0568    0.0026   -0.0481   -0.0128   -0.0586
+    85 C6     *200      -0.0016    0.0046    0.0064    0.0054    0.0052    0.0021    0.0072   -0.0011   -0.0074    0.0047
+    86 C6     *110       0.0057    0.0081    0.0012    0.0152    0.0055    0.0026    0.0019    0.0120   -0.0066    0.0089
+    87 C6     *101       0.0046   -0.0084   -0.0009   -0.0012    0.0010   -0.0042   -0.0077    0.0064    0.0058    0.0034
+    88 C6     *020       0.0072   -0.0016   -0.0001    0.0001    0.0002   -0.0059   -0.0062    0.0059    0.0072    0.0014
+    89 C6     *011      -0.0021   -0.0009    0.0060   -0.0068    0.0062   -0.0090    0.0070   -0.0037    0.0045   -0.0072
+    90 C6     *002      -0.0047    0.0003   -0.0028   -0.0036   -0.0053    0.0064   -0.0005   -0.0037   -0.0015   -0.0053
+    91 H7     1s        -0.0821   -0.0198    0.1285   -0.1014   -0.0323   -0.0074   -0.0419    0.1799    0.1522   -0.0329
+    92 H7     *s        -0.0269   -0.0110    0.0628   -0.0442   -0.0130   -0.0039   -0.0312    0.1371    0.1231   -0.0259
+    93 H8     1s         0.0614   -0.1079    0.0506    0.1308   -0.1586   -0.0488   -0.0224    0.0164   -0.0917   -0.1586
+    94 H8     *s         0.0187   -0.0407    0.0336    0.0631   -0.1074   -0.0358   -0.0222    0.0166   -0.0815   -0.1369
+    95 H9     1s         0.0614    0.1079    0.0506   -0.1308   -0.1586   -0.0488   -0.0224   -0.0164   -0.0917    0.1586
+    96 H9     *s         0.0187    0.0407    0.0336   -0.0631   -0.1074   -0.0358   -0.0222   -0.0166   -0.0815    0.1369
+    97 H10    1s        -0.0821    0.0198    0.1285    0.1014   -0.0323   -0.0073   -0.0421   -0.1799    0.1522    0.0329
+    98 H10    *s        -0.0269    0.0110    0.0628    0.0442   -0.0130   -0.0039   -0.0313   -0.1370    0.1231    0.0259
+    99 H11    1s         0.0769   -0.1135    0.1258   -0.1448    0.0741    0.0956    0.0204   -0.0946   -0.0836   -0.0731
+   100 H11    *s         0.0276   -0.0467    0.0698   -0.0730    0.0512    0.0625    0.0225   -0.0688   -0.0712   -0.0611
+   101 H12    1s         0.0769    0.1135    0.1258    0.1448    0.0741    0.0956    0.0204    0.0946   -0.0836    0.0731
+   102 H12    *s         0.0276    0.0467    0.0698    0.0730    0.0512    0.0625    0.0226    0.0688   -0.0712    0.0611
+   103 B13    1s         0.0513   -0.0000    0.0527    0.0000    0.0454   -0.0823    0.0415   -0.0000    0.0392   -0.0000
+   104 B13    2s        -0.0863    0.0000   -0.0797   -0.0000   -0.0766    0.1375   -0.0630    0.0000   -0.0611    0.0000
+   105 B13    *s        -0.0380    0.0000   -0.0385   -0.0000   -0.0751    0.1066   -0.1025    0.0001   -0.0599    0.0000
+   106 B13    2px        0.0651    0.0000    0.0202    0.0000   -0.0377   -0.0381    0.0366   -0.0000    0.0590    0.0000
+   107 B13    *px        0.0035    0.0000   -0.0028    0.0000    0.0073   -0.0061    0.0154   -0.0000    0.0069   -0.0000
+   108 B13    2py       -0.0000    0.0405    0.0000   -0.0806   -0.0000    0.0000   -0.0000   -0.1011   -0.0000   -0.1094
+   109 B13    *py       -0.0000   -0.0030   -0.0000   -0.0077    0.0000   -0.0000   -0.0000   -0.0059   -0.0000   -0.0153
+   110 B13    2pz        0.0338   -0.0000    0.0814   -0.0000    0.0711   -0.0468    0.0079   -0.0000    0.0293   -0.0000
+   111 B13    *pz       -0.0007    0.0000    0.0034   -0.0000    0.0227   -0.0093    0.0160   -0.0000    0.0043   -0.0000
+   112 B13    *200       0.0001   -0.0000    0.0016   -0.0000    0.0038    0.0036   -0.0072    0.0000   -0.0022   -0.0000
+   113 B13    *110       0.0000    0.0049    0.0000    0.0095   -0.0000    0.0000    0.0000    0.0029    0.0000   -0.0033
+   114 B13    *101      -0.0118   -0.0000   -0.0020    0.0000    0.0092   -0.0004    0.0026   -0.0000   -0.0095   -0.0000
+   115 B13    *020      -0.0079   -0.0000    0.0022   -0.0000   -0.0040    0.0097   -0.0013    0.0000   -0.0026    0.0000
+   116 B13    *011       0.0000   -0.0105   -0.0000    0.0090    0.0000   -0.0000    0.0000    0.0228    0.0000    0.0161
+   117 B13    *002      -0.0003    0.0000   -0.0098    0.0000   -0.0079    0.0011   -0.0006    0.0000   -0.0013    0.0000
+
+
+      Orbital                21        22        23        24        25        26        27        28        29        30
+      Energy            -0.3997   -0.3745   -0.3238   -0.0849    0.7648    0.4701    0.5066    0.6711    0.6321    0.7156
+      Occ. No.           2.0000    2.0000    2.0000    1.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+     1 C1     1s         0.0112    0.0054   -0.0067    0.0197    0.0878    0.0063   -0.0296    0.0458    0.0155    0.0373
+     2 C1     2s        -0.0290   -0.0025    0.0027   -0.0417   -0.1977   -0.1297    0.1516   -0.2172   -0.1470   -0.0974
+     3 C1     *s        -0.0329   -0.0765    0.0892   -0.0344   -0.8244    0.3094    0.2735    0.1438   -0.1726   -0.1726
+     4 C1     2px        0.0524   -0.0797    0.0099   -0.0275    0.0678   -0.0014    0.3611    0.4454    0.0514    0.0196
+     5 C1     *px        0.0176   -0.0701    0.0309   -0.0309   -0.0431   -0.1104    0.2271    0.3190   -0.0481   -0.0695
+     6 C1     2py        0.1535    0.0568   -0.0403    0.0448    0.0694    0.1596   -0.0871    0.0998   -0.2907    0.2235
+     7 C1     *py        0.0872    0.0583   -0.0554    0.0157    0.3156   -0.0482   -0.1036   -0.1181   -0.2188    0.1735
+     8 C1     2pz       -0.2745   -0.0938    0.1358   -0.0856    0.1423   -0.0573    0.1273   -0.2159   -0.0837    0.4811
+     9 C1     *pz       -0.2033   -0.0673    0.1242   -0.0588   -0.0657   -0.2296    0.0262   -0.2881   -0.0856    0.0035
+    10 C1     *200      -0.0032    0.0047   -0.0101    0.0020   -0.0281    0.0136   -0.0088   -0.0189    0.0142   -0.0117
+    11 C1     *110       0.0019    0.0026   -0.0013    0.0036   -0.0039   -0.0140   -0.0117   -0.0385    0.0276   -0.0323
+    12 C1     *101      -0.0131    0.0121    0.0125    0.0012   -0.0523    0.0092   -0.0006    0.0114   -0.0079    0.0099
+    13 C1     *020       0.0007   -0.0013    0.0053   -0.0070    0.1125   -0.0181    0.0140    0.0490   -0.0351    0.0355
+    14 C1     *011       0.0103    0.0066   -0.0039   -0.0001    0.0493   -0.0156   -0.0009   -0.0325    0.0139   -0.0309
+    15 C1     *002       0.0024   -0.0035    0.0050    0.0049   -0.0031   -0.0133   -0.0154   -0.0403    0.0275   -0.0367
+    16 C2     1s         0.0119   -0.0171    0.0129   -0.0105   -0.0362    0.0053   -0.0121   -0.0483    0.0370   -0.0466
+    17 C2     2s        -0.0253    0.0411   -0.0345    0.0116    0.0038    0.0848    0.0776    0.2365   -0.2991    0.1354
+    18 C2     *s        -0.0571    0.0480   -0.0442    0.0601    0.4124   -0.3271    0.0449    0.1536   -0.0918    0.2307
+    19 C2     2px        0.0037    0.1721    0.0693    0.0151    0.1235   -0.0459    0.2057    0.2535    0.0589    0.1318
+    20 C2     *px       -0.0026    0.1085    0.0850    0.0201    0.3287   -0.0955    0.1150    0.0676    0.0718    0.1211
+    21 C2     2py       -0.0042    0.0189   -0.0173    0.0090    0.1626   -0.0085    0.0173    0.0858   -0.1159    0.2035
+    22 C2     *py       -0.0069    0.0106   -0.0190    0.0006    0.1163   -0.0814    0.0118    0.1663   -0.1039    0.1021
+    23 C2     2pz       -0.0668   -0.1294   -0.3066    0.0409   -0.1821    0.2390    0.1091    0.2506   -0.0469   -0.1318
+    24 C2     *pz       -0.0441   -0.1080   -0.2571    0.0561   -0.0552    0.2968    0.0694    0.0669    0.1589    0.0507
+    25 C2     *200       0.0001    0.0007   -0.0006   -0.0014    0.0484    0.0170    0.0006   -0.0256    0.0032   -0.0255
+    26 C2     *110       0.0033   -0.0015   -0.0118    0.0039   -0.0935    0.0453   -0.0078   -0.0288    0.0319   -0.0095
+    27 C2     *101      -0.0087   -0.0022    0.0040   -0.0051    0.0921   -0.0471    0.0035    0.0183   -0.0258   -0.0046
+    28 C2     *020       0.0022    0.0018   -0.0016    0.0002    0.0063    0.0189   -0.0055   -0.0109    0.0063   -0.0117
+    29 C2     *011      -0.0046    0.0122    0.0192   -0.0025    0.0313   -0.0107    0.0056    0.0217   -0.0180    0.0229
+    30 C2     *002      -0.0026   -0.0017    0.0018   -0.0020    0.0676    0.0038    0.0009    0.0033   -0.0106   -0.0050
+    31 C3     1s        -0.0119   -0.0171    0.0129   -0.0105   -0.0247    0.0090   -0.0200    0.0266    0.0153    0.0198
+    32 C3     2s         0.0253    0.0411   -0.0345    0.0116   -0.0150    0.1043    0.1087   -0.0593   -0.2147   -0.1123
+    33 C3     *s         0.0571    0.0480   -0.0442    0.0601    0.3016   -0.3308    0.0770   -0.2231    0.0061   -0.0755
+    34 C3     2px       -0.0036    0.1720    0.0693    0.0151   -0.1159    0.1526    0.2118    0.2122    0.0702   -0.0485
+    35 C3     *px        0.0027    0.1085    0.0850    0.0201    0.1587   -0.0209    0.1154    0.0347    0.0793   -0.0220
+    36 C3     2py       -0.0042   -0.0189    0.0173   -0.0090   -0.1086   -0.0049   -0.0576    0.1922    0.0233    0.2057
+    37 C3     *py       -0.0069   -0.0106    0.0190   -0.0006   -0.0851    0.0672   -0.0357    0.0440    0.0419    0.1460
+    38 C3     2pz        0.0667   -0.1295   -0.3066    0.0409    0.2010   -0.3545    0.1258    0.0851    0.0016    0.0686
+    39 C3     *pz        0.0441   -0.1080   -0.2571    0.0561    0.1703   -0.0953    0.0792   -0.0470    0.1932    0.1529
+    40 C3     *200      -0.0001    0.0007   -0.0006   -0.0014    0.0435    0.0172    0.0010   -0.0255    0.0030   -0.0251
+    41 C3     *110       0.0033    0.0015    0.0118   -0.0039    0.0874   -0.0462    0.0089    0.0283   -0.0319    0.0107
+    42 C3     *101       0.0087   -0.0022    0.0040   -0.0051    0.0821   -0.0450    0.0040    0.0190   -0.0261   -0.0028
+    43 C3     *020      -0.0022    0.0018   -0.0016    0.0002    0.0084    0.0158   -0.0052   -0.0105    0.0063   -0.0133
+    44 C3     *011      -0.0046   -0.0122   -0.0192    0.0025   -0.0349    0.0118   -0.0055   -0.0209    0.0174   -0.0211
+    45 C3     *002       0.0026   -0.0017    0.0018   -0.0020    0.0658    0.0030    0.0012    0.0042   -0.0110   -0.0052
+    46 C4     1s        -0.0112    0.0054   -0.0067    0.0197    0.0780   -0.0031   -0.0248    0.0180    0.0316   -0.0433
+    47 C4     2s         0.0290   -0.0025    0.0027   -0.0417   -0.1582   -0.1284    0.1308   -0.0943   -0.2127    0.2205
+    48 C4     *s         0.0329   -0.0765    0.0892   -0.0344   -0.7244    0.4346    0.2552    0.2928   -0.2484    0.2232
+    49 C4     2px       -0.0525   -0.0796    0.0099   -0.0275    0.0683    0.0547    0.3912   -0.0737    0.1165    0.1152
+    50 C4     *px       -0.0176   -0.0701    0.0309   -0.0309   -0.0813   -0.0470    0.2459   -0.0438   -0.0019   -0.0233
+    51 C4     2py        0.1535   -0.0569    0.0403   -0.0448   -0.0088   -0.0741    0.0566   -0.0203    0.2323    0.2174
+    52 C4     *py        0.0872   -0.0583    0.0554   -0.0157   -0.2442    0.1028    0.0876    0.1788    0.1858    0.1220
+    53 C4     2pz        0.2745   -0.0940    0.1359   -0.0855    0.2369    0.2851    0.1243    0.1146   -0.0720   -0.0775
+    54 C4     *pz        0.2033   -0.0674    0.1242   -0.0588   -0.0177    0.0009    0.0257   -0.0747   -0.0810   -0.3351
+    55 C4     *200       0.0032    0.0047   -0.0101    0.0020   -0.0202    0.0120   -0.0097   -0.0179    0.0142   -0.0136
+    56 C4     *110       0.0019   -0.0026    0.0013   -0.0036    0.0009    0.0151    0.0119    0.0386   -0.0278    0.0316
+    57 C4     *101       0.0131    0.0121    0.0125    0.0012   -0.0410    0.0007   -0.0019    0.0131   -0.0076    0.0072
+    58 C4     *020      -0.0007   -0.0013    0.0053   -0.0070    0.1044   -0.0167    0.0154    0.0482   -0.0351    0.0372
+    59 C4     *011       0.0103   -0.0066    0.0039    0.0001   -0.0450    0.0129    0.0004    0.0336   -0.0139    0.0289
+    60 C4     *002      -0.0024   -0.0035    0.0050    0.0049   -0.0016   -0.0125   -0.0157   -0.0400    0.0274   -0.0364
+    61 C5     1s         0.0131    0.0143    0.0190   -0.0020    0.0317   -0.0155    0.0320   -0.0392    0.0422    0.0341
+    62 C5     2s        -0.0337   -0.0397   -0.0439   -0.0100    0.0563   -0.0566   -0.0899    0.4029   -0.4391   -0.1100
+    63 C5     *s         0.0171   -0.0225   -0.0917    0.0970   -0.2384    0.1730   -0.1869   -0.0314    0.0541   -0.0284
+    64 C5     2px        0.1650    0.1403    0.0569   -0.0522   -0.4185   -0.0687    0.2069   -0.0363   -0.0648    0.0531
+    65 C5     *px        0.1108    0.0916    0.0236   -0.0630    0.0118   -0.1798    0.1513    0.1509   -0.1990    0.0458
+    66 C5     2py        0.0412    0.0297    0.0394   -0.0169    0.0402   -0.0465   -0.0074   -0.1427    0.1797    0.3550
+    67 C5     *py        0.0638    0.0184    0.0415   -0.0204   -0.2968    0.1698    0.0033   -0.1468    0.0593    0.1200
+    68 C5     2pz        0.0387    0.2370   -0.1274   -0.0509   -0.1115   -0.3081   -0.3003    0.2530    0.0892    0.0962
+    69 C5     *pz        0.0386    0.1996   -0.1086   -0.0303   -0.3444   -0.2689   -0.2175    0.0826    0.0696   -0.0088
+    70 C5     *200      -0.0027   -0.0010    0.0002   -0.0014    0.0753   -0.0188    0.0025   -0.0196    0.0023   -0.0199
+    71 C5     *110      -0.0173    0.0110   -0.0055    0.0031   -0.0892    0.0331   -0.0039   -0.0189    0.0232   -0.0078
+    72 C5     *101      -0.0028    0.0087   -0.0016    0.0089   -0.0770    0.0247   -0.0180   -0.0599    0.0436   -0.0346
+    73 C5     *020      -0.0030   -0.0015   -0.0014   -0.0006    0.0410   -0.0101   -0.0002   -0.0038    0.0027   -0.0096
+    74 C5     *011       0.0011    0.0216   -0.0076   -0.0038    0.0259   -0.0098    0.0101    0.0323   -0.0215    0.0216
+    75 C5     *002       0.0054    0.0028   -0.0004    0.0021    0.0123   -0.0142   -0.0082   -0.0090    0.0079   -0.0164
+    76 C6     1s        -0.0131    0.0143    0.0190   -0.0020    0.0524   -0.0089    0.0317    0.0218    0.0462   -0.0631
+    77 C6     2s         0.0337   -0.0397   -0.0439   -0.0100   -0.0106   -0.0662   -0.0872    0.1476   -0.4527    0.2828
+    78 C6     *s        -0.0171   -0.0225   -0.0918    0.0970   -0.2553    0.0851   -0.1859   -0.3481    0.0491    0.3970
+    79 C6     2px       -0.1649    0.1404    0.0569   -0.0522   -0.1762    0.1771    0.1967    0.1170   -0.0752   -0.0653
+    80 C6     *px       -0.1107    0.0917    0.0236   -0.0630    0.1344   -0.0357    0.1455    0.2630   -0.2091   -0.0292
+    81 C6     2py        0.0412   -0.0297   -0.0393    0.0169   -0.0967    0.0538    0.0009   -0.2212   -0.2124    0.2653
+    82 C6     *py        0.0638   -0.0185   -0.0414    0.0204    0.2154   -0.0861   -0.0044   -0.0970   -0.0767    0.2605
+    83 C6     2pz       -0.0385    0.2370   -0.1274   -0.0509    0.2443    0.4906   -0.3046   -0.1024    0.0833    0.1413
+    84 C6     *pz       -0.0385    0.1997   -0.1086   -0.0303   -0.1255    0.2455   -0.2188   -0.1528    0.0690    0.0111
+    85 C6     *200       0.0027   -0.0010    0.0002   -0.0014    0.0748   -0.0200    0.0023   -0.0187    0.0020   -0.0208
+    86 C6     *110      -0.0173   -0.0110    0.0055   -0.0031    0.0923   -0.0332    0.0035    0.0184   -0.0231    0.0068
+    87 C6     *101       0.0028    0.0087   -0.0016    0.0089   -0.0783    0.0244   -0.0176   -0.0599    0.0439   -0.0347
+    88 C6     *020       0.0030   -0.0015   -0.0014   -0.0006    0.0410   -0.0132   -0.0001   -0.0040    0.0032   -0.0105
+    89 C6     *011       0.0011   -0.0216    0.0076    0.0038   -0.0313    0.0089   -0.0095   -0.0334    0.0217   -0.0206
+    90 C6     *002      -0.0054    0.0028   -0.0004    0.0021    0.0124   -0.0134   -0.0078   -0.0097    0.0077   -0.0152
+    91 H7     1s         0.0470    0.0147    0.0168   -0.0243    0.0542   -0.1046   -0.0348    0.0942    0.3086   -0.1777
+    92 H7     *s         0.0545    0.0097    0.0305   -0.0271   -0.0374    0.1059   -0.0077    0.1068    0.3617   -0.1929
+    93 H8     1s        -0.0051   -0.0319    0.0216   -0.0142   -0.2203    0.0507    0.1297    0.0455    0.2353   -0.1015
+    94 H8     *s        -0.0028   -0.0395    0.0391   -0.0199   -0.0433    0.0939    0.1405   -0.0470    0.2559   -0.1679
+    95 H9     1s         0.0051   -0.0319    0.0216   -0.0142   -0.1793    0.0387    0.0976    0.2806    0.1592    0.1931
+    96 H9     *s         0.0028   -0.0395    0.0391   -0.0199   -0.0069    0.0718    0.1072    0.2511    0.1677    0.1516
+    97 H10    1s        -0.0470    0.0147    0.0168   -0.0243    0.0586   -0.1194   -0.0513    0.0591    0.2903    0.0933
+    98 H10    *s        -0.0545    0.0097    0.0306   -0.0271   -0.0318    0.0894   -0.0197    0.0896    0.3451    0.1254
+    99 H11    1s         0.0674   -0.0026    0.0233   -0.0293    0.0371    0.0329   -0.1405   -0.0994    0.2811    0.2503
+   100 H11    *s         0.0742   -0.0062    0.0440   -0.0434    0.0361    0.0154   -0.1753   -0.1816    0.2747    0.1244
+   101 H12    1s        -0.0673   -0.0026    0.0233   -0.0293    0.0551    0.0509   -0.1316    0.0286    0.3148   -0.1876
+   102 H12    *s        -0.0742   -0.0061    0.0440   -0.0434    0.0737    0.0162   -0.1668   -0.0379    0.3090   -0.3505
+   103 B13    1s         0.0000    0.0182   -0.0680   -0.1190    0.0096    0.0112    0.0231   -0.0326    0.0426    0.0290
+   104 B13    2s        -0.0000   -0.0350    0.1229    0.2114   -0.0081    0.0848   -0.0083    0.6995   -0.5791    0.1031
+   105 B13    *s        -0.0000   -0.0299    0.1099    0.4072    0.7841   -0.4303   -0.2727   -0.4884    0.0628   -0.0207
+   106 B13    2px        0.0001    0.1921   -0.1539    0.2908    0.0745   -0.2049    0.3393   -0.2699   -0.0209   -0.2051
+   107 B13    *px        0.0000    0.0847   -0.0410    0.2864   -0.0087    0.2681    0.4457   -0.0097    0.2495    0.2570
+   108 B13    2py       -0.2690    0.0001   -0.0000   -0.0000    0.0360   -0.1091   -0.0091    0.2501   -0.0152   -0.0103
+   109 B13    *py       -0.0894    0.0000   -0.0000   -0.0000    0.0244   -0.0664   -0.0058    0.2035   -0.0126   -0.0035
+   110 B13    2pz       -0.0000   -0.0729    0.0530    0.3528   -0.1990   -0.1208   -0.3357    0.0951   -0.0446   -0.0808
+   111 B13    *pz       -0.0000   -0.0523    0.0543    0.3535   -0.5160    0.3571    0.0201    0.3281    0.3246    0.4824
+   112 B13    *200      -0.0000    0.0005    0.0034    0.0118    0.0202    0.0372    0.0043   -0.1343    0.0772   -0.1078
+   113 B13    *110       0.0202   -0.0000   -0.0000    0.0000   -0.0041    0.0044    0.0007    0.0008    0.0001    0.0022
+   114 B13    *101      -0.0000   -0.0257    0.0152    0.0078   -0.1748    0.1651    0.0490    0.0361    0.0286    0.1718
+   115 B13    *020      -0.0000   -0.0065    0.0100   -0.0029    0.2208   -0.0812    0.0039   -0.0869    0.0038   -0.1331
+   116 B13    *011       0.0221   -0.0000    0.0000   -0.0000   -0.0035   -0.0015    0.0006    0.0005    0.0002   -0.0005
+   117 B13    *002       0.0000    0.0078   -0.0058    0.0018    0.0538    0.0735    0.0375   -0.0424    0.0427   -0.0091
+
+
+      Orbital                31        32        34        36
+      Energy             0.6322    0.9026    0.7474    0.7376
+      Occ. No.           0.0000    0.0000    0.0000    0.0000
+
+     1 C1     1s        -0.0480    0.0567   -0.0265   -0.0399
+     2 C1     2s         0.1347   -0.2356    0.2756    0.1759
+     3 C1     *s         0.4751   -0.1209   -0.3291    0.0597
+     4 C1     2px        0.1015   -0.1100   -0.0214    0.1023
+     5 C1     *px        0.0016    0.0503   -0.1670    0.0399
+     6 C1     2py       -0.0601   -0.2196   -0.0450    0.4390
+     7 C1     *py       -0.2593   -0.2904    0.2152    0.4166
+     8 C1     2pz        0.1061    0.2481   -0.1607    0.0017
+     9 C1     *pz       -0.1295    0.2703   -0.3090    0.1260
+    10 C1     *200       0.0032    0.0150   -0.0158    0.0297
+    11 C1     *110       0.0048   -0.0103    0.0201    0.0208
+    12 C1     *101      -0.0017    0.0286   -0.0594   -0.0158
+    13 C1     *020      -0.0083   -0.0507    0.0779   -0.0338
+    14 C1     *011      -0.0069    0.0492    0.0654    0.0260
+    15 C1     *002      -0.0025   -0.0287    0.0152    0.0223
+    16 C2     1s        -0.0303    0.0067    0.0529    0.0226
+    17 C2     2s         0.0038   -0.0059   -0.5471   -0.0750
+    18 C2     *s         0.2756   -0.0542    0.0435   -0.2318
+    19 C2     2px       -0.1729    0.2286   -0.0042    0.1374
+    20 C2     *px       -0.1426    0.0186    0.2815    0.1477
+    21 C2     2py        0.0692   -0.1184   -0.2063   -0.0552
+    22 C2     *py        0.1235    0.0547   -0.1285   -0.1702
+    23 C2     2pz       -0.1575    0.0343   -0.3076    0.1006
+    24 C2     *pz        0.0883   -0.0335    0.0555    0.0035
+    25 C2     *200      -0.0302    0.0646    0.0447    0.0249
+    26 C2     *110       0.0077   -0.0210   -0.0717    0.0185
+    27 C2     *101      -0.0230   -0.0094    0.0638   -0.0043
+    28 C2     *020      -0.0088    0.0513    0.0055    0.0181
+    29 C2     *011      -0.0112   -0.0575    0.0105   -0.0132
+    30 C2     *002      -0.0167    0.0604    0.0534    0.0146
+    31 C3     1s         0.0132    0.0974    0.0408    0.0403
+    32 C3     2s        -0.1704   -0.3881   -0.4748   -0.1519
+    33 C3     *s         0.0451   -0.5094    0.0408   -0.2808
+    34 C3     2px       -0.1977    0.1289   -0.2293    0.1130
+    35 C3     *px       -0.1585   -0.0402    0.1226    0.1579
+    36 C3     2py        0.0766    0.1830    0.1568    0.1627
+    37 C3     *py       -0.0014    0.0033    0.0926    0.1979
+    38 C3     2pz       -0.2545    0.0283    0.1246    0.0810
+    39 C3     *pz        0.0233   -0.0360    0.3151    0.0124
+    40 C3     *200      -0.0304    0.0695    0.0398    0.0251
+    41 C3     *110      -0.0074    0.0164    0.0666   -0.0185
+    42 C3     *101      -0.0231   -0.0063    0.0535   -0.0045
+    43 C3     *020      -0.0071    0.0368    0.0085    0.0155
+    44 C3     *011       0.0114    0.0595   -0.0144    0.0130
+    45 C3     *002      -0.0158    0.0607    0.0518    0.0140
+    46 C4     1s        -0.0521   -0.0239   -0.0189   -0.0504
+    47 C4     2s         0.1625    0.1080    0.2441    0.2221
+    48 C4     *s         0.5042    0.2981   -0.3141    0.0816
+    49 C4     2px       -0.3228   -0.3348    0.0506    0.0258
+    50 C4     *px       -0.2956   -0.1032   -0.1559    0.0353
+    51 C4     2py        0.0586   -0.2182    0.0379   -0.3445
+    52 C4     *py        0.2672    0.0373   -0.1850   -0.3774
+    53 C4     2pz        0.4566    0.0995   -0.0526    0.0083
+    54 C4     *pz        0.0941    0.1669   -0.2534    0.1317
+    55 C4     *200       0.0041    0.0159   -0.0085    0.0288
+    56 C4     *110      -0.0054    0.0210   -0.0234   -0.0209
+    57 C4     *101       0.0007    0.0238   -0.0482   -0.0164
+    58 C4     *020      -0.0084   -0.0577    0.0709   -0.0347
+    59 C4     *011       0.0082   -0.0475   -0.0612   -0.0262
+    60 C4     *002      -0.0025   -0.0255    0.0164    0.0221
+    61 C5     1s        -0.0353   -0.0215    0.0160    0.0462
+    62 C5     2s         0.0739   -0.1401   -0.0417   -0.2504
+    63 C5     *s         0.4268    0.4984    0.1812   -0.3560
+    64 C5     2px       -0.1212   -0.0186    0.1147   -0.1896
+    65 C5     *px       -0.1238   -0.0986    0.1976   -0.1705
+    66 C5     2py       -0.1548   -0.2097    0.0271    0.1823
+    67 C5     *py       -0.2604   -0.0346   -0.3749    0.2272
+    68 C5     2pz        0.2336   -0.0363   -0.0960    0.0343
+    69 C5     *pz        0.1118    0.1509   -0.3245    0.0276
+    70 C5     *200      -0.0182    0.0458    0.0759    0.0206
+    71 C5     *110       0.0086   -0.0645   -0.0713    0.0068
+    72 C5     *101       0.0131    0.0328   -0.0337    0.0359
+    73 C5     *020      -0.0008    0.0420    0.0419    0.0100
+    74 C5     *011       0.0060    0.0079    0.0140   -0.0252
+    75 C5     *002      -0.0002    0.0280    0.0155    0.0192
+    76 C6     1s         0.0319   -0.0470    0.0410    0.0462
+    77 C6     2s        -0.2037   -0.0496   -0.1237   -0.2569
+    78 C6     *s         0.0990    0.6266    0.1548   -0.3428
+    79 C6     2px        0.0198   -0.0993    0.3440   -0.1514
+    80 C6     *px       -0.0231   -0.1273    0.3099   -0.1437
+    81 C6     2py       -0.2549    0.1961   -0.1191   -0.1743
+    82 C6     *py       -0.0138    0.0258    0.2731   -0.2008
+    83 C6     2pz       -0.1223    0.0476    0.2539    0.0326
+    84 C6     *pz       -0.1202    0.1984   -0.1064    0.0365
+    85 C6     *200      -0.0175    0.0477    0.0752    0.0201
+    86 C6     *110      -0.0090    0.0653    0.0743   -0.0070
+    87 C6     *101       0.0137    0.0284   -0.0345    0.0355
+    88 C6     *020      -0.0006    0.0430    0.0424    0.0109
+    89 C6     *011      -0.0066   -0.0129   -0.0188    0.0249
+    90 C6     *002      -0.0005    0.0236    0.0159    0.0194
+    91 H7     1s        -0.0382    0.2645   -0.0532   -0.4065
+    92 H7     *s        -0.0390    0.3534   -0.1515   -0.4476
+    93 H8     1s        -0.1896    0.0386    0.0990    0.1475
+    94 H8     *s        -0.3295    0.1335    0.2909    0.2898
+    95 H9     1s        -0.0643    0.2300    0.0550    0.2288
+    96 H9     *s        -0.1572    0.3532    0.2314    0.3579
+    97 H10    1s        -0.0972   -0.1889   -0.0735   -0.3496
+    98 H10    *s        -0.0834   -0.1645   -0.1687   -0.4106
+    99 H11    1s        -0.0128   -0.1605   -0.3068    0.2843
+   100 H11    *s        -0.1502   -0.0816   -0.3988    0.4273
+   101 H12    1s         0.1645   -0.1581   -0.2509    0.2547
+   102 H12    *s         0.0475   -0.0863   -0.3215    0.3820
+   103 B13    1s         0.0692    0.1614    0.0791    0.0234
+   104 B13    2s        -0.2283   -1.2193   -0.5645   -0.3943
+   105 B13    *s        -0.4760   -0.8772    0.8288    0.3321
+   106 B13    2px        0.0580    0.1562   -0.2010    0.1199
+   107 B13    *px        0.6264   -0.0151    0.0789   -0.2531
+   108 B13    2py        0.2270   -0.1729    0.0179    0.0367
+   109 B13    *py        0.1829   -0.1418    0.0095    0.0184
+   110 B13    2pz       -0.2132    0.0075   -0.1113    0.1131
+   111 B13    *pz        0.6378    0.4156   -0.0261   -0.3906
+   112 B13    *200      -0.0258    0.3939    0.0942    0.1005
+   113 B13    *110       0.0005    0.0004   -0.0038    0.0001
+   114 B13    *101       0.0699   -0.0447   -0.1362   -0.0284
+   115 B13    *020      -0.0944    0.2996    0.2142    0.1156
+   116 B13    *011       0.0010   -0.0050   -0.0029   -0.0013
+   117 B13    *002      -0.0062    0.2576    0.0874    0.0821
+--
+
+      Von Neumann Entropy (Root   1) =  0.50000
+
+
+      Mulliken population analysis for root number:  1
+      -----------------------------------------------
+
+
+++    Molecular charges:
+      ------------------
+
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+
+                C1      C2      C3      C4      C5      C6      H7      H8      H9      H10     H11     H12   
+      1s       1.9970  1.9967  1.9967  1.9970  1.9969  1.9969  0.5248  0.5239  0.5239  0.5248  0.5208  0.5208
+      2s       0.6340  0.6670  0.6669  0.6340  0.6690  0.6690  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      2px      0.6591  0.6651  0.6651  0.6592  0.7061  0.7061  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      2pz      0.6644  0.5630  0.5630  0.6644  0.5351  0.5351  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      2py      0.7170  0.7528  0.7528  0.7170  0.7447  0.7447  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *s       0.6012  0.4926  0.4926  0.6012  0.5568  0.5568  0.2757  0.2838  0.2838  0.2757  0.2558  0.2558
+      *px      0.2069  0.2957  0.2957  0.2069  0.3338  0.3339  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *pz      0.4209  0.4432  0.4432  0.4209  0.3495  0.3496  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *py      0.4060  0.2266  0.2265  0.4060  0.2239  0.2239  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *200     0.0178  0.0177  0.0177  0.0178  0.0192  0.0192  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *110     0.0095  0.0162  0.0162  0.0096  0.0153  0.0153  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *101     0.0122  0.0063  0.0063  0.0122  0.0078  0.0078  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *020     0.0306  0.0246  0.0246  0.0306  0.0238  0.0238  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *011     0.0066  0.0101  0.0101  0.0066  0.0115  0.0115  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *002    -0.0056 -0.0132 -0.0132 -0.0056 -0.0050 -0.0050  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      Total    6.3779  6.1642  6.1642  6.3779  6.1884  6.1885  0.8005  0.8077  0.8077  0.8005  0.7766  0.7766
+
+      N-E     -0.3779 -0.1642 -0.1642 -0.3779 -0.1884 -0.1885  0.1995  0.1923  0.1923  0.1995  0.2234  0.2234
+
+                B13   
+      1s       1.9978
+      2s       0.4984
+      2px      0.4486
+      2pz      0.3786
+      2py      0.4844
+      *s       0.3876
+      *px      0.1860
+      *pz      0.1858
+      *py      0.0713
+      *200     0.0158
+      *110     0.0100
+      *101     0.0161
+      *020     0.0336
+      *011     0.0255
+      *002     0.0299
+      Total    4.7694
+
+      N-E      0.2306
+
+      Total electronic charge=   47.000000
+
+      Total            charge=   -0.000000
+--
+
+
+
+      Expectation values of various properties for root number:  1
+      -----------------------------------------------------------
+
+
+++    Molecular properties:
+      ---------------------
+
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (debye):
+      Origin of the operator (angstrom)=    0.0104    0.0000    0.0288
+                   X=  1.0191E+00               Y= -8.9419E-05               Z= -1.6136E+00           Total=  1.9085E+00
+      Quadrupole Moment (debye*angstrom):
+      Origin of the operator (angstrom)=    0.0104    0.0000    0.0288
+                  XX= -3.8423E+01              XY= -4.9070E-04              XZ= -1.5533E+00              YY= -3.6996E+01
+                  YZ= -2.2329E-04              ZZ= -4.5870E+01
+      In traceless form (debye*angstrom)
+                  XX=  3.0107E+00              XY= -7.3605E-04              XZ= -2.3300E+00              YY=  5.1503E+00
+                  YZ= -3.3494E-04              ZZ= -8.1610E+00
+--
+
+
+      Mulliken spin population analysis for root number:  1
+      ---------------------------------------------------
+
+
+++    Molecular charges:
+      ------------------
+
+      Mulliken spin population per centre and basis function type
+      ---------------------------------------------------
+
+                C1      C2      C3      C4      C5      C6      H7      H8      H9      H10     H11     H12   
+      1s       0.0000  0.0000  0.0000  0.0000 -0.0000 -0.0000  0.0011  0.0004  0.0004  0.0011  0.0015  0.0015
+      2s       0.0025  0.0003  0.0003  0.0025 -0.0000 -0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      2px      0.0009  0.0003  0.0003  0.0009  0.0033  0.0033  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      2pz      0.0100  0.0023  0.0023  0.0100  0.0038  0.0038  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      2py      0.0033  0.0001  0.0001  0.0033  0.0005  0.0005  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *s      -0.0011  0.0007  0.0007 -0.0011  0.0062  0.0062 -0.0002  0.0003  0.0003 -0.0002  0.0000  0.0000
+      *px     -0.0026  0.0002  0.0002 -0.0026  0.0011  0.0011  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *pz     -0.0028  0.0013  0.0013 -0.0028 -0.0023 -0.0023  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *py     -0.0003  0.0000  0.0000 -0.0003 -0.0004 -0.0004  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *200    -0.0001 -0.0000 -0.0000 -0.0001  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *110     0.0001  0.0001  0.0001  0.0001  0.0001  0.0001  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *101     0.0000  0.0002  0.0002  0.0000  0.0007  0.0007  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *020     0.0012  0.0000  0.0000  0.0012  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *011    -0.0000  0.0000  0.0000 -0.0000  0.0001  0.0001  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      *002    -0.0001 -0.0000 -0.0000 -0.0001  0.0001  0.0001  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+      Total    0.0111  0.0054  0.0054  0.0111  0.0130  0.0130  0.0009  0.0007  0.0007  0.0009  0.0015  0.0015
+
+                B13   
+      1s       0.0007
+      2s       0.0950
+      2px      0.1350
+      2pz      0.2069
+      2py      0.0000
+      *s       0.2025
+      *px      0.1079
+      *pz      0.1795
+      *py      0.0000
+      *200     0.0073
+      *110     0.0000
+      *101     0.0002
+      *020    -0.0015
+      *011     0.0000
+      *002     0.0011
+      Total    0.9346
+
+      Total electronic spin=    1.000000
+--
+
+
+
+      Input file to MOLDEN was generated!
+
+
+      Input file to MOLDEN was generated!
+
+      Average orbitals are written to the RASORB file
+      Natural orbitals for root   1 are written to the RASORB.1 file
+      Spin density orbitals for root   1 are written to the SPDORB.1 file
+
+--- Stop Module: rasscf at Thu Sep 17 18:07:30 2026 /rc=_RC_ALL_IS_WELL_ ---
+*** files: B-C6H6_A.rasscf.molden B-C6H6_A.rasscf.molden.1 B-C6H6_A.RasOrb B-C6H6_A.RasOrb.1 B-C6H6_A.rasscf.h5 B-C6H6_A.SpdOrb.1 xmldump
+    saved to directory /Users/lucas/Development/Honors/OpenMolcas/build/CALCULATIONS/B-C6H6_A_gnd_st/$CurrDir/output
+--- Module rasscf spent 8 seconds ---
+
+.##################.
+.# Happy landing! #.
+.##################.
+
+    Timing: Wall=10.08 User=9.55 System=0.42

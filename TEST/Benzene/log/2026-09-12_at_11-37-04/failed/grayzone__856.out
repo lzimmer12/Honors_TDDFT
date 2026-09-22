@@ -1,0 +1,219 @@
+   This run of MOLCAS is using the pymolcas driver
+
+                             OPE
+                             OPE          NMOL  CASOP  ENMOLC A   SO
+                 OPE        NMOLC        AS  OP EN  MO LC     AS  OP
+                OPENM       OL CA        SO  PE NM  OL CA     SOP EN
+                OP EN      MO   LC       AS  OP ENMOL  CASO   PENMOL
+                OP  EN     MO   LC       AS  OP EN     MO     LC ASO
+               OP   E  NMOL  C  AS       OP  EN MO     LC     AS  OP
+               OP  E   NMO   LC AS        OPEN  MO     LCASOP EN   M
+               O  PEN   MO  LCA  SO
+            OPE   NMO   L   CAS    OP
+        OPENMOL  CASOP     ENMOL   CASOPE
+     OPENMOLCA   SOPENMOLCASOPEN   MOLCASOPE
+    OPENMOLCAS   OP           EN   MOL    CAS
+    OPENMOLCAS       OP  ENM        O     LCA
+    OPENMOLCAS    OPEN  MOLCASO     P  E  NMO
+    OPENMOLCAS     OP               E  N  MOL
+    OPENMOLCA   SO           PENM   O  L  CAS    OPEN    MO    LCAS
+    OPENMOLCA   SOP           ENM   O  L  CAS   OP  EN  MOLC  AS   O
+    OPENMOLCA   SOPE           NM      O  LCA   S      OP  EN MO
+    OPENMOLC                AS         O  PEN   M      OL  CA  SOPE
+    OPENMO        LCASOPE  NMOL        C  ASO   P      ENMOLC     AS
+    OPE     NMO      LCA  SO     P     E   NM   OL  CA SO  PE N   MO
+          OPENMOLCA            SOPE   NMO        LCAS  O    P  ENMO
+     OPENMOLCASOPENMOLCASOPENMOLCASOPENMOLCA
+        OPENMOLCASOPENMOLCASOPENMOLCASOPE
+            OPENMOLCASOPENMOLCASOPENM
+               OPENMOLCASOPENMOLCA        version: 26.06
+                   OPENMOLCASO
+                       OPE                tag: 1255-g02e1240ae
+
+ OpenMolcas is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License version 2.1.
+ OpenMolcas is distributed in the hope that it will be useful, but it
+ is provided "as is" and without any express or implied warranties.
+ For more details see the full text of the license in the file
+ LICENSE or in <http://www.gnu.org/licenses/>.
+
+                 Copyright (C) The OpenMolcas Authors
+           For the author list and the recommended citation,
+                   consult the file CONTRIBUTORS.md
+
+           *************************************************
+           * pymolcas version py2.32                       *
+           *   build 5fe1e42a8a423461f97be6f8128d9c45      *
+           *   (after the EMIL interpreter by V. Veryazov) *
+           *************************************************
+
+configuration info
+------------------
+Host name: MacBook-Air-11.local (macOS)
+C Compiler ID: AppleClang
+C flags: -std=gnu99
+Fortran Compiler ID: GNU
+Fortran flags: -cpp -fdefault-integer-8 -fmax-stack-var-size=1048576
+Definitions: _MOLCAS_;_I8_;_LINUX_;_DARWIN_;_DARWIN_C_SOURCE
+Parallel: OFF (GA=OFF)
+
+
+   -------------------------------------------------------------------------------------------
+  |
+  |           Project: grayzone__856
+  |    Submitted from: /Users/lucas/Development/Honors/OpenMolcas/build/test/tmp
+  |      Scratch area: /Users/lucas/Development/Honors/OpenMolcas/build/test/tmp/grayzone__856
+  |   Save outputs to: WORKDIR
+  |            Molcas: /Users/lucas/Development/Honors/OpenMolcas/build
+  |
+  | Scratch area is empty
+  |
+  |    MOLCAS_DRIVER = /Users/lucas/Development/Honors/OpenMolcas/build/pymolcas
+  |    MOLCAS_NPROCS = 1
+  |    MOLCAS_SOURCE = /Users/lucas/Development/Honors/OpenMolcas/OpenMolcas
+  | MOLCAS_STRUCTURE = 0
+  |   MOLCAS_TIMELIM = 600
+  |  MOLCAS_VALIDATE = YES
+  |
+   -------------------------------------------------------------------------------------------
+
+++ ---------   Input file   ---------
+
+>>> RM -FORCE TEST_DICE
+
+>>> IF ($MOLCAS_DRIVER == UNKNOWN_VARIABLE)
+
+  >>> EXPORT MOLCAS_DRIVER = molcas
+
+>>> END IF
+
+>>> SHELL $MOLCAS_DRIVER have_feature dice || touch TEST_DICE
+
+>>> IF (-FILE TEST_DICE)
+
+  >>> EXIT 36
+
+>>> END IF
+
+&GATEWAY
+Coord
+12
+Benzene
+H        1.242914921      2.152791792      0.000000000
+C        0.695567452      1.204758167      0.000000000
+C       -0.695567452      1.204758167      0.000000000
+H       -1.242914921      2.152791792      0.000000000
+C       -1.391134904      0.000000000      0.000000000
+H       -2.485829842      0.000000000      0.000000000
+C       -0.695567452     -1.204758167      0.000000000
+H       -1.242914921     -2.152791792      0.000000000
+C        0.695567452     -1.204758167      0.000000000
+H        1.242914921     -2.152791792      0.000000000
+C        1.391134904      0.000000000      0.000000000
+H        2.485829842      0.000000000      0.000000000
+Basis set
+ANO-RCC-MB
+
+&SEWARD
+Medium
+
+>>> COPY startorb INPORB
+
+&RASSCF
+LumOrb
+Spin
+1
+Symmetry
+1
+nActEl
+6 0 0
+Inactive
+6 5 4 3 0 0 0 0
+Ras2
+0 0 0 0 2 2 1 1
+
+CIRoot
+1 1
+1
+
+&RASSCF
+LumOrb
+Spin
+1
+Symmetry
+1
+nActEl
+6 0 0
+Inactive
+6 5 4 3 0 0 0 0
+Ras2
+0 0 0 0 2 2 1 1
+
+CIRoot
+1 1
+1
+
+THRS
+1.0e-07 1.0e-03 1.0e-03
+
+DICE
+EPSilon
+  1.0d-4 1.0d-5
+DIOC
+  1
+2 0   2 0   2   0
+DITErations
+ 30
+
+&RASSCF
+LumOrb
+Spin
+1
+Symmetry
+1
+nActEl
+6 0 0
+Inactive
+6 5 4 3 0 0 0 0
+Ras2
+0 0 0 0 2 2 1 1
+
+CIRoot
+1 1
+1
+
+THRS
+1.0e-07 1.0e-03 1.0e-03
+
+DICE
+EPSilon
+  1.0d-4 1.0d-5
+DIOC
+  5
+2 0   2 0   2   0
+2 2   0 0   2   0
+2 0   2 0   0   2
+2 u   u 0   d   d
+u 0   2 u   d   d
+
+DITErations
+ 30
+DIREstart
+
+-- ----------------------------------
+
+>>> RM -FORCE TEST_DICE
+
+>>> IF ($MOLCAS_DRIVER == UNKNOWN_VARIABLE)
+(Skipped)
+
+>>> SHELL /Users/lucas/Development/Honors/OpenMolcas/build/pymolcas have_feature dice || touch TEST_DICE
+
+>>> IF (-FILE TEST_DICE)
+
+>>> EXIT _RC_NOT_AVAILABLE_
+
+.##################################.
+.# Requested module not available #.
+.##################################.
+

@@ -1,0 +1,12 @@
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_DIVIDE_BY_ZERO IEEE_UNDERFLOW_FLAG
+[ process      0]: xquit (rc =    128): _INTERNAL_ERROR_
+
+Program aborted. Backtrace:
+#0  0x108092103
+#1  0x108092c07
+#2  0x1081c178b
+#3  0x104c6856b
+#4  0x104c68687
+#5  0x104ac3867
+#6  0x104ab1b0f
+#7  0x10503d017

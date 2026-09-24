@@ -32,7 +32,7 @@
  Symmetry= 1
  Spin= 2
  nActEl= 5 0 0
- Inactive= 18
+ Inactive= 21
  RAS2= 6
  CIroot= 3 3 1
 
@@ -44,8 +44,8 @@
  JOBIPH; CIRESTART
  Symmetry= 1
  Spin= 2
- nActEl= 1 0 0
- Inactive= 18
+ nActEl= 5 0 0
+ Inactive= 21
  RAS2= 6
  CIroot= 3 3 1
  MDRLXR= 2

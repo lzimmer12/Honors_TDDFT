@@ -19,7 +19,7 @@
  GROUP= nosym
  RICD
 
->> EXPORT MOLCAS_MAXITER=1000
+>> EXPORT MOLCAS_MAXITER=10000
 >> DOWHILE
 
 &SEWARD
@@ -35,6 +35,7 @@
  Inactive= 21
  RAS2= 6
  CIroot= 3 3 1
+ MDRLXR= 2
 
 >> COPY $Project.JobIph $Project.JobOld
 

@@ -38,6 +38,7 @@
  MDRLXR= 2
 
 >> COPY $Project.JobIph $Project.JobOld
+>> COPY $Project.RasOrb $CurrDir/output/$Project.RasOrb.$iter
 
 >> ENDIF
 

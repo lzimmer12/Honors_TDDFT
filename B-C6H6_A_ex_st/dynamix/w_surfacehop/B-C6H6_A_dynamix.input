@@ -34,7 +34,7 @@
  nActEl= 1 0 0
  Inactive= 23
  RAS2= 4
- CIroot= 3 3 1
+ CIroot= 4 4 1
  MDRLXR= 2
 
 >> COPY $Project.JobIph $Project.JobOld
@@ -48,7 +48,7 @@
  nActEl= 1 0 0
  Inactive= 23
  RAS2= 4
- CIroot= 3 3 1
+ CIroot= 4 4 1
  MDRLXR= 2
 &GRID_IT
 
@@ -57,6 +57,7 @@
 >> COPY $Project.RasOrb.1 $CurrDir/output/$Project.root1.RasOrb.$MOLCAS_ITER
 >> COPY $Project.RasOrb.2 $CurrDir/output/$Project.root2.RasOrb.$MOLCAS_ITER
 >> COPY $Project.RasOrb.3 $CurrDir/output/$Project.root3.RasOrb.$MOLCAS_ITER
+>> COPY $Project.RasOrb.4 $CurrDir/output/$Project.root4.RasOrb.$MOLCAS_ITER
 
 &surfacehop
  TULLY

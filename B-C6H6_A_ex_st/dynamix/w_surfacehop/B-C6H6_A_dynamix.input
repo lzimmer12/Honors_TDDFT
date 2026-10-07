@@ -19,7 +19,7 @@
  GROUP= nosym
  RICD
 
->> EXPORT MOLCAS_MAXITER=1000
+>> EXPORT MOLCAS_MAXITER=2000
 >> DOWHILE
 
 &SEWARD
@@ -31,10 +31,10 @@
  FileOrb= $Project.GssOrb
  Symmetry= 1
  Spin= 2
- nActEl= 1 0 0
- Inactive= 23
- RAS2= 4
- CIroot= 4 4 1
+ nActEl= 5 0 0
+ Inactive= 21
+ RAS2= 6
+ CIroot= 3 3 1
  MDRLXR= 2
 
 >> COPY $Project.JobIph $Project.JobOld
@@ -45,10 +45,10 @@
  JOBIPH; CIRESTART
  Symmetry= 1
  Spin= 2
- nActEl= 1 0 0
- Inactive= 23
- RAS2= 4
- CIroot= 4 4 1
+ nActEl= 5 0 0
+ Inactive= 21
+ RAS2= 6
+ CIroot= 3 3 1
  MDRLXR= 2
 &GRID_IT
 

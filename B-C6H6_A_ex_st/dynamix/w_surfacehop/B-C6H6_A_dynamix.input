@@ -35,7 +35,7 @@
  Inactive= 21
  RAS2= 6
  CIroot= 3 3 1
- MDRLXR= 2
+ MDRLXR= 1
 
 >> COPY $Project.JobIph $Project.JobOld
 
@@ -49,7 +49,7 @@
  Inactive= 21
  RAS2= 6
  CIroot= 3 3 1
- MDRLXR= 2
+ MDRLXR= 1
 &GRID_IT
 
 >> COPY $Project.JobIph $Project.JobOld

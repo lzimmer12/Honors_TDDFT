@@ -1,0 +1,76 @@
+&GATEWAY
+ COORD
+ 13
+	gV B-C6H6_A
+ C                 -0.86982000   -0.91899500   -0.36573500
+ C                  0.42139400   -1.38146100   -0.12126900
+ C                  1.45478200   -0.50801700    0.15066400
+ C                  1.23288100    0.89591700    0.07016700
+ C                  0.00358900    1.39434200   -0.21860900
+ C                 -1.15425900    0.52204600   -0.30616700
+ H                 -1.65537300   -1.61136300   -0.63616000
+ H                  0.60832800   -2.44773900   -0.14370800
+ H                  2.44432600   -0.88545200    0.36742100
+ H                  2.07029500    1.57084500    0.19256500
+ H                 -0.14969500    2.46120800   -0.31255500
+ H                 -2.03337500    0.88937900   -0.82842000
+ B                 -1.56318100    0.00002700    1.22131000
+ BASIS= ANO-R1
+ GROUP= nosym
+ RICD
+
+>> EXPORT MOLCAS_MAXITER=2000
+>> DOWHILE
+
+&SEWARD
+
+>> IF ( ITER = 1 )
+
+&RASSCF
+ LUMORB
+ FileOrb= $Project.GssOrb
+ Symmetry= 1
+ Spin= 2
+ nActEl= 5 0 0
+ Inactive= 21
+ RAS2= 6
+ CIroot= 3 3 1
+ MDRLXR= 2
+
+>> COPY $Project.JobIph $Project.JobOld
+
+>> ENDIF
+
+&RASSCF
+ JOBIPH; CIRESTART
+ Symmetry= 1
+ Spin= 2
+ nActEl= 5 0 0
+ Inactive= 21
+ RAS2= 6
+ CIroot= 3 3 1
+ MDRLXR= 2
+&GRID_IT
+
+>> COPY $Project.JobIph $Project.JobOld
+>> COPY $Project.RasOrb $CurrDir/output/$Project.SA.RasOrb.$MOLCAS_ITER
+>> COPY $Project.RasOrb.1 $CurrDir/output/$Project.root1.RasOrb.$MOLCAS_ITER
+>> COPY $Project.RasOrb.2 $CurrDir/output/$Project.root2.RasOrb.$MOLCAS_ITER
+>> COPY $Project.RasOrb.3 $CurrDir/output/$Project.root3.RasOrb.$MOLCAS_ITER
+
+&surfacehop
+ TULLY
+ SUBSTEP = 200
+ DECOHERENCE = 0.1
+ PSUB
+
+&ALASKA
+
+&DYNAMIX
+ VELVer
+ DT= 10.0
+ VELO= 3
+ THER= 2
+ TEMP=8
+
+>> END DO

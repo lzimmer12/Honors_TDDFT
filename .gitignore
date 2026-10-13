@@ -1,4 +1,5 @@
-**/output/
+output/
+*.log
 .DS_Store
 Honors_SSH_Key
 Honors_SSH_Key.pub

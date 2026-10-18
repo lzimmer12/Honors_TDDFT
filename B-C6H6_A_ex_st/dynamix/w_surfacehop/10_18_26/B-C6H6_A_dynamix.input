@@ -57,7 +57,6 @@
 >> COPY $Project.RasOrb.1 $CurrDir/output/$Project.root1.RasOrb.$MOLCAS_ITER
 >> COPY $Project.RasOrb.2 $CurrDir/output/$Project.root2.RasOrb.$MOLCAS_ITER
 >> COPY $Project.RasOrb.3 $CurrDir/output/$Project.root3.RasOrb.$MOLCAS_ITER
->> COPY $Project.RasOrb.4 $CurrDir/output/$Project.root4.RasOrb.$MOLCAS_ITER
 
 &surfacehop
  TULLY
